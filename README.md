@@ -1,2 +1,5 @@
 # BPA-WebDev-2022
-## This is a test 
+## Project Information
+#### Contributors: Kavin, Aadhav, Saisarath, Aditya
+#### Website: Hosted Using github.io
+

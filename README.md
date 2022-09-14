@@ -3,5 +3,5 @@
 #### Contributors: Kavin, Aadhav, Saisarath, Aditya
 #### Website: Hosted Using github.io
 #### Status: Public 
-#### Competition Stage: Area 1 Region 3 TX
+#### Competition Stage: Area 1 Region 3 Texas
 

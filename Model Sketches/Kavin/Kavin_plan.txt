@@ -1,3 +1,6 @@
 Write down the website plan: You may do this however you like.
 Please write below this line. 
 ==============================================================
+Uploaded a graphic for this checkpoint
+
+Hello World

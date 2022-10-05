@@ -1,0 +1,5 @@
+LIST THE URL OF ANY PUBLIC DOMAIN ASSETS USED
+FORMAT: FILE_NAME: URL 
+=============================================
+
+home_background_1.mp4: https://www.pexels.com/video/a-car-travelling-in-a-road-built-at-lakeside-3065047/

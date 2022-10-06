@@ -1,6 +1,6 @@
 :root
 {
-    --primary: #04ccfec4;
+    --primary: #90adb5c4;
     --light: #EEEEEE;
     --dark: #212121;
 }
@@ -30,7 +30,8 @@ nav
     z-index: 99;
     background-color: var(--dark);
     padding: 16px 32px;
-    border-bottom: 3px solid var(--primary);
+    border-bottom: 1px solid var(--primary);
+    opacity: 0.75;
 }
 
 h1 

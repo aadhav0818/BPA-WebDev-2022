@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500&display=swap');
+
+:root
+{
+    --primary: #5db5cec4;
+    --light: #EEEEEE;
+    --dark: #212121;
+    --default_opacity: 0.9;
+    --navbar_width: 70px;
+}
+
+*
+{
+    font-family: 'Inter Tight', sans-serif;
+}
+
+#video-container button
+{
+    transition: 0.5s;
+    position: absolute;
+    z-index: 4;
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 30px;
+    margin-top: calc(var(--navbar_width) + 360px);
+    margin-left: 1450px;
+    border: none;
+    background: linear-gradient(90deg, rgb(181, 179, 233) 0%, rgb(96, 96, 226) 35%, rgba(0,212,255,1) 100%);
+    
+}
+
+#video-container button:hover
+{
+    transition: 0.5s;
+    background: rgb(44, 173, 247);
+   
+}
+
+#video-container h1
+{
+    position: absolute;
+    z-index: 3;
+    color: white;
+    font-size: 120px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-top: calc(var(--navbar_width) + 250px);
+    padding-left: 150px;
+    text-transform: none;
+
+}
+
+#video-container h3
+{
+    position: absolute;
+    z-index: 3;
+    color: white;
+    font-size: 40px;
+    font-weight: 200;
+    font-family: 'Inter Tight', sans-serif;
+    letter-spacing: 2px;
+    padding-top: calc(var(--navbar_width) + 390px);
+    padding-left: 150px;
+    text-transform: none;
+}
+
+#video-slider
+{
+    overflow: hidden;
+    z-index: 1;
+}
+
+#video-slider figure
+{
+    width: 500%;
+    position: relative;
+    margin: 0;
+    left: 0;
+    animation: 15s video-slider infinite;
+}
+
+#video-slider figure video
+{
+    float: left;
+    width: 20%;
+}
+
+@keyframes video-slider {
+    0% 
+    {
+        left: 0;
+    }
+    20% 
+    {
+        left: 0
+    }
+    25% 
+    {
+        left: -100%
+    }
+    45% 
+    {
+        left: -100%
+    }
+    50%
+    {
+        left: -200%;
+    }
+    70%
+    {
+        left: -200%;
+    }
+    75%
+    {
+        left: -300%;
+    }
+    95%
+    {
+        left: -300%;
+    }
+    100%
+    {
+        left: -400%;
+    }
+}
+
+.background_videos
+{
+    height:800px;
+    object-fit: cover;
+    border-bottom: 70px solid var(--dark);
+    margin-top: 70px;
+}
+
+
+
+
+

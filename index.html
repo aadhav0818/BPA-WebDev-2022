@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="./styles/styles.css"/>
+    <link rel="stylesheet" href="./styles/navbar.css"/>
     <link rel="stylesheet" href="./styles/index.css"/>
 
 </head>
@@ -27,8 +27,22 @@
         </div>
     </nav>
     
-    <video src = "./image-assets/home_background_1.mp4" muted loop autoplay></video>
-    <scirpt src="./scripts/script.js"></scirpt>
+    <div id = "video-container">
+        <h1 id = "tagline">Reinventing Finance.</h1>
+        <h3 id = "statement">Company name is one of the newest companies on the <br> block. You can learn more about our vision here.</h3>
+        <button id = "shop-button">Shop Cars</button>
+
+        <div id = "video-slider">
+            <figure>
+                <video src = "./image-assets/home_background_1.mp4" muted loop autoplay class = "background_videos"></video>
+                <video src = "./image-assets/home_background_2.mp4" muted loop autoplay class = "background_videos"></video>
+                <video src = "./image-assets/home_background_3.mp4" muted loop autoplay class = "background_videos"></video>
+                <video src = "./image-assets/home_background_4.mp4" muted loop autoplay class = "background_videos"></video>
+                <video src = "./image-assets/home_background_1.mp4" muted loop autoplay class = "background_videos"></video>
+            </figure>
+        </div>
+
+    </div>
 
 </body>
 

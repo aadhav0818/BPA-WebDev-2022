@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500&display=swap');
+
 :root
 {
-    --primary: #90adb5c4;
+    --primary: #5db5cec4;
     --light: #EEEEEE;
     --dark: #212121;
 }
@@ -10,7 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Fira sans', sans-serif;
+    font-family: 'Inter Tight', sans-serif;
 }
 
 .nav-bar-container 
@@ -30,15 +32,13 @@ nav
     z-index: 99;
     background-color: var(--dark);
     padding: 16px 32px;
-    border-bottom: 1px solid var(--primary);
-    opacity: 0.75;
 }
 
 h1 
 {
     color: white;
     font-size: 28px;
-    font-weight: 900;
+    font-weight: 500;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -56,9 +56,11 @@ h1
 {
     color: white;
     margin: 0 16px;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
-    padding: 8px;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
     border-radius: 99px;
     transition: 0.5s;
 }

@@ -2,7 +2,7 @@ LIST THE URL OF ANY PUBLIC DOMAIN ASSETS USED
 FORMAT: FILE_NAME: URL 
 =============================================
 
-home_background_1.mp4: https://www.pexels.com/video/a-car-travelling-in-a-road-built-at-lakeside-3065047/
+home_background_1.mp4: https://www.pexels.com/video/landscape-desert-dry-bush-9318017/
 car-dealership.jpg: https://cdn.dbusiness.com/wp-content/uploads/sites/33/2018/01/car-dealership.jpg
 shaking-hands.jpg: https://cdn.gobankingrates.com/wp-content/uploads/2020/01/car-dealer-shaking-hands-with-customer-shutterstock_793466692.jpg?quality=75&w=1800
 car-sales.jpg: https://cdn-apgml.nitrocdn.com/LebpnhtoivqQZrhySxTgIGIqkErReVqW/assets/static/optimized/rev-69e2f46/wp-content/uploads/2022/02/car-sales.jpeg

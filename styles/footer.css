@@ -1,0 +1,14 @@
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background-color: #293338; 
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .footer-table 
+  {
+    padding-top: 10%;
+  }

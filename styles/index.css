@@ -2,7 +2,7 @@
 
 :root
 {
-    --primary: #5db5cec4;
+    --primary: #6B767B;
     --light: #EEEEEE;
     --dark: #212121;
     --default_opacity: 0.9;
@@ -27,15 +27,22 @@
     margin-top: calc(var(--navbar_width) + 360px);
     margin-left: 1450px;
     border: none;
-    background: linear-gradient(90deg, rgb(181, 179, 233) 0%, rgb(96, 96, 226) 35%, rgba(0,212,255,1) 100%);
-    
+    color: var(--light);
+    background-color: #4d5f5f; 
+     
 }
 
 #video-container button:hover
 {
     transition: 0.5s;
-    background: rgb(44, 173, 247);
-   
+    background: #1689ac;
+}
+
+#video-container button:active
+{
+    
+    border: 3px solid #174d5e;
+    
 }
 
 #video-container h1

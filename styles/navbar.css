@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500&display=swap%27');
 
 :root
 {
@@ -15,71 +15,52 @@
     font-family: 'Inter Tight', sans-serif;
 }
 
-.nav-bar-container 
-{
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav 
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    background-color: var(--dark);
-    padding: 16px 32px;
-}
 
 h1 
 {
     color: white;
-    font-size: 28px;
+    font-size: 1.8rem;
     font-weight: 500;
-    letter-spacing: 2px;
+    letter-spacing: .125rem;
     text-transform: uppercase;
 }
 
-.nav-bar-buttons 
-{
-    display: none;
-    flex: 1 1 0%;
-    margin: 0 32px;
-}
 
-
-
-.nav-bar-buttons a
-{
+.main-navbar {
+    background-color: var(--dark);
     color: white;
-    margin: 0 16px;
-    font-weight: 500;
-    text-decoration: none;
-    padding: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
-    border-radius: 99px;
-    transition: 0.5s;
+    z-index: 99;
 }
 
-.nav-bar-buttons a.nav-bar-button-active
-{
-    background-color: var(--primary);
+.main-navbar-logo {
+    max-width: 70%;
+    margin-left: .6rem;
 }
 
-.nav-bar-buttons a:hover 
-{
-    transition: 0.5s;
-    background-color: var(--primary);
+.main-nav-item {
+    padding: .6rem 1.6rem;
+}
+
+a {
+    border-bottom: .2rem solid transparent;
+}
+
+.main-nav-link {
+    font-size: 1.2rem;
+}
+
+.search-bar {
+    padding: 1.6rem;
+}
+
+.main-nav-active {
+    border-bottom: .2rem solid white;
 }
 
 #logo
 {
     width: auto;
-    height: 30px;
+    height: 1.9px;
 }
 
 

@@ -1,147 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 :root
 {
     --primary: #6B767B;
-    --light: #EEEEEE;
+    --light: #fff;
     --dark: #212121;
     --default_opacity: 0.9;
-    --navbar_width: 70px;
 }
 
-*
-{
-    font-family: 'Inter Tight', sans-serif;
-}
-
-#video-container button
-{
-    transition: 0.5s;
-    position: absolute;
-    z-index: 4;
-    width: 200px;
-    height: 60px;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 30px;
-    margin-top: calc(var(--navbar_width) + 360px);
-    margin-left: 1450px;
-    border: none;
-    color: var(--light);
-    background-color: #4d5f5f; 
-     
-}
-
-#video-container button:hover
-{
-    transition: 0.5s;
-    background: #1689ac;
-}
-
-#video-container button:active
-{
-    
-    border: 3px solid #174d5e;
-    
-}
-
-#video-container h1
-{
-    position: absolute;
-    z-index: 3;
-    color: white;
-    font-size: 120px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    padding-top: calc(var(--navbar_width) + 250px);
-    padding-left: 150px;
-    text-transform: none;
-
-}
-
-#video-container h3
-{
-    position: absolute;
-    z-index: 3;
-    color: white;
-    font-size: 40px;
-    font-weight: 200;
-    font-family: 'Inter Tight', sans-serif;
-    letter-spacing: 2px;
-    padding-top: calc(var(--navbar_width) + 390px);
-    padding-left: 150px;
-    text-transform: none;
-}
-
-#video-slider
-{
-    overflow: hidden;
-    z-index: 1;
-}
-
-#video-slider figure
-{
-    width: 500%;
+.carousel {
     position: relative;
-    margin: 0;
-    left: 0;
-    animation: 15s video-slider infinite;
+    opacity: 0.9;
 }
 
-#video-slider figure video
-{
-    float: left;
-    width: 20%;
+.carousel-text {
+    color: var(--light);
+    font-family: 'Montserrat';
+    letter-spacing: .05rem;
+    text-transform: none;
+    position: absolute;
+    z-index: 3;
+    margin-left: 10%;
+    margin-top: 7.7%;
+    font-size: 3rem;
 }
 
-@keyframes video-slider {
-    0% 
-    {
-        left: 0;
-    }
-    20% 
-    {
-        left: 0
-    }
-    25% 
-    {
-        left: -100%
-    }
-    45% 
-    {
-        left: -100%
-    }
-    50%
-    {
-        left: -200%;
-    }
-    70%
-    {
-        left: -200%;
-    }
-    75%
-    {
-        left: -300%;
-    }
-    95%
-    {
-        left: -300%;
-    }
-    100%
-    {
-        left: -400%;
+@media (max-width: 625px) {
+    .carousel-text {
+        font-size: 1.6rem;
     }
 }
-
-.background_videos
-{
-    height:800px;
-    object-fit: cover;
-    border-bottom: 70px solid var(--dark);
-    margin-top: 70px;
-}
-
-
-
-
-

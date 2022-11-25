@@ -1,65 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <link rel="stylesheet" href="./styles/navbar.css"/>
     <link rel="stylesheet" href="./styles/index.css"/>
-    <link rel="stylesheet" href="./styles/footer.css">
-</head>
+    <link rel="stylesheet" href="./styles/footer.css"/>
 
-<body>
-    
-    <nav>
-        <div class="nav-bar-container">
-            <img id = "logo" src = "image-assets/logo-double-bold-no-padding.png">  
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
 
-            <div class = "nav-bar-buttons">
-                <a href="./index.html" class = "nav-bar-button-active">Home</a>
-                <a href="./inventory.html">Inventory</a>
-                <a href="./about-and-contact-us.html">About Us</a>
-                <a href="./placeholder.html">BPA A1R3 PRESIDENT</a>
-            </div>
-            
-        </div>
-    </nav>
-    
-    <div id = "video-container">
-        <h1 id = "tagline">Reinventing Finance.</h1>
-        <h3 id = "statement">Company name is one of the newest companies on the <br> block. You can learn more about our vision here.</h3>
-        <a href='./inventory.html'>
-            <button>Shop Cars</button>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+
+    <nav class="navbar main-navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand main-text" href="#">
+          <img
+            class="navbar-logo main-navbar-logo"
+            src="image-assets/logo-bold-no-padding.png"
+            alt="logo"
+          />
         </a>
-        
-
-        <div id = "video-slider">
-            <figure>
-                <video src = "./image-assets/home_background_1.mp4" muted loop autoplay class = "background_videos"></video>
-                <video src = "./image-assets/home_background_2.mp4" muted loop autoplay class = "background_videos"></video>
-                <video src = "./image-assets/home_background_3.mp4" muted loop autoplay class = "background_videos"></video>
-                <video src = "./image-assets/home_background_4.mp4" muted loop autoplay class = "background_videos"></video>
-                <video src = "./image-assets/home_background_1.mp4" muted loop autoplay class = "background_videos"></video>
-            </figure>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item main-nav-item">
+              <a
+                class="nav-link main-nav-link nav-active main-nav-active"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item main-nav-item">
+              <a class="nav-link main-nav-link" href="inventory.html"
+                >Inventory</a
+              >
+            </li>
+            <li class="nav-item main-nav-item">
+              <a class="nav-link main-nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item main-nav-item">
+              <a class="nav-link main-nav-link" href="#">Car Finder</a>
+            </li>
+          </ul>
+          <form class="form-inline nav-item main-nav-item">
+            <input
+              class="form-control mr-sm-2 search-bar"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
         </div>
+      </div>
+    </nav>
 
-        
+    <div class="carousel slide" data-bs-ride="carousel">
+      <h1 class="carousel-text">Find your dream ride.</h1>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="image-assets/home-carousel-4runner.jpg"
+            class="d-block w-100"
+            alt="4runner"
+            data-bs-interval="5000"
+          />
+          <div class="carousel-caption d-none d-md-block"></div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="image-assets/home-carousel-accord.jpg"
+            class="d-block w-100"
+            alt="accord"
+            data-bs-interval="5000"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="image-assets/home-carousel-outback.jpg"
+            class="d-block w-100"
+            alt="outback"
+            data-bs-interval="5000"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="image-assets/home-carousel-silverado.jpg"
+            class="d-block w-100"
+            alt="silverado"
+            data-bs-interval="5000"
+          />
+        </div>
+      </div>
     </div>
-    
-    <div class="footer">
-        <br>
-        <table width="100%">
-            <tr>
-                <td>Contact Us</td>
-                <td>Shopping Tools</td>
-                <td>Vehicles</td>
-                <td>About [Company Name]</td>
-            </tr>
-        </table>
-    </div>
 
-</body>
-
+    <!--footer-->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul class="footer-elements">
+              <li>
+                <a href="#">Services</a>
+                <a href="#">About us</a>
+                <a href="#">Contact us</a>
+                <a href="#"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Get Help</h4>
+            <ul class="footer-elements">
+              <li>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul class="footer-elements">
+              <li>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow us</h4>
+            <div class="footer-socials">
+              <!-- add icons from fav icon representing the social platforms -->
+              <a href=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

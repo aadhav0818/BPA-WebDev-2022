@@ -1,14 +1,61 @@
-.footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 150px;
-    background-color: #293338; 
-    color: #ffffff;
-    text-align: center;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500&display=swap');
 
-  .footer-table 
-  {
-    padding-top: 10%;
-  }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  max-width: 1170px;
+  margin:auto;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-elements {
+  list-style: none;
+  margin-left: 0;
+  float: left;
+  padding-left: 0;
+}
+
+
+.footer {
+  background-color: #212121;
+  padding: 4rem 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 1rem;
+}
+
+.footer-col h4 {
+  font-family: 'Ubuntu';
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: #fff;
+  margin-bottom: .7rem;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col ul li a{
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+  padding-left: .6rem;
+}

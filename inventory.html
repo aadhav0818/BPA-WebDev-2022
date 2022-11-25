@@ -1,40 +1,787 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-    <link rel = "stylesheet" href = "./styles/navbar.css"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="./styles/inventory.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/footer.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+     
 </head>
 
 <body>
 
-    <nav>
-        <div class="nav-bar-container">
-            <h1>Company Name</h1>
-            <div class = "nav-bar-buttons">
-                <a href="./index.html">Home</a>
-                <a href="./inventory.html" class = "nav-bar-button-active">Inventory</a>
-                <a href="./about-and-contact-us.html">About Us</a>
-                <a href="./placeholder.html">BPA A1R3 PRESIDENT</a>
+    <nav class="navbar main-navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand main-text" href="#">
+            <img
+              class="navbar-logo main-navbar-logo"
+              src="image-assets/logo-bold-no-padding.png"
+              alt="logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item main-nav-item">
+                <a
+                  class="nav-link main-nav-link"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item main-nav-item">
+                <a class="nav-link main-nav-link nav-active main-nav-active" href="inventory.html"
+                  >Inventory</a
+                >
+              </li>
+              <li class="nav-item main-nav-item">
+                <a class="nav-link main-nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item main-nav-item">
+                <a class="nav-link main-nav-link" href="#">Car Finder</a>
+              </li>
+            </ul>
+            <form class="form-inline nav-item main-nav-item">
+              <input
+                class="form-control mr-sm-2 search-bar"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+        
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#brandSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                        Brands
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill submenu-caret" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                        </svg>
+                    </a>
+                    <ul class="collapse list-unstyled" id="brandSubmenu">
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Honda
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Toyota
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Nissan
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Mercedes
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Infinity
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Ford
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Land Rover
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#priceSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                        Price
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill submenu-caret" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                        </svg>
+                    </a>
+                    <ul class="collapse list-unstyled" id="priceSubmenu">
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Less than $10000
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    $10000 - $25000
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    $25000 - $40000
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    $40000 - $55000
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    $55000 - $70000
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    More than $70000
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#carTypeSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                        Vehicle Type
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill submenu-caret" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                        </svg>
+                    </a>
+                    <ul class="collapse list-unstyled" id="carTypeSubmenu">
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    SUV
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Sedan
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Sports
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Mini
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Truck
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#colorSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                        Color
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill submenu-caret" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                        </svg>
+                    </a>
+                    <ul class="collapse list-unstyled" id="colorSubmenu">
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Black
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Gray
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Dark Gray
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Blue
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Light Blue
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Red
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Green
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Tan
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Yellow
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#yearSubmenu" data-bs-toggle="collapse" aria-expanded="false">
+                        Year
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill submenu-caret" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                        </svg>
+                    </a>
+                    <ul class="collapse list-unstyled" id="yearSubmenu">
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    2014
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    2015
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    2016
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    2017
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    2018
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    2019
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    2020
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    2021
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    2022
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="#" class="pages-active">Page 1</a>
+                </li>
+                <li>
+                    <a href="#" class="pages">Page 2</a>
+                </li>
+                <li>
+                    <a href="#" class="pages">Page 3</a>
+                </li>
+                <li>
+                    <a href="#" class="pages">Page 4</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar inventory-navbar navbar-expand-lg navbar-light bg-dark">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-outline-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Show Filters</span>
+                    </button>     
+                    
+                    <div style="padding-left:1%">
+                        <button type="button" id="sidebarCollapse" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#HelpModalCenter">
+                            <i class="fas fa-question-circle"></i>
+                            <span>Help</span>
+                        </button>    
+                    </div>
+
+                    <div style="padding-left:1%">
+                        <button type="button" id="sidebarCollapse" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#LoanModalCenter">
+                            <i class="fas fa-money-check-alt"></i>
+                            <span>Loan Estimator</span>
+                        </button>    
+                    </div>
+                    
+                    <div class="modal fade" id="LoanModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                              <h5 class="modal-title text-white" id="ModalLongTitle">
+                                <i class="fas fa-money-check-alt"></i>
+                                Loan Estimator
+                              </h5>
+                            </div>
+                            <div class="modal-body text-white">
+                              After analyzing many sources, VTERNAL has constructed a comprehensive loan estimator that you can use for free 
+                              to help you acquire your dream ride. 
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-outline-success">
+                                Loan Estimator
+                                <i class='fas fa-arrow-circle-right'></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="HelpModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                              <h5 class="modal-title text-white" id="ModalLongTitle">
+                                <i class="fas fa-question-circle"></i>
+                                Help and FAQ's
+                              </h5>
+                            </div>
+                            <div class="modal-body text-white">
+                              VTERNAL's car inventory features a variety of vehicles from brands, sizes, years, makes, colors, and prices of all types.
+                              To use our service, there are a couple of features we have implemented to make your life easier. To filter every car
+                              by its features, please click on the "Show Filters" button. Under this new menu, you can click on each respective
+                              feature and enable the ones that you desire to filter out our inventory to the vehicles that suit your taste. If you
+                              still can't decide on what your desired car is, take our Car Quiz! Simply press the "Take Quiz" button that is located
+                              on our featured menu on the top of this page. To request a vehicle purchase, you can browse through the catalog below to
+                              find a car of your liking. If you have anymore questions, please feel free to Contact Us!
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-outline-info">
+                                Contact Us
+                                <i class='fas fa-arrow-circle-right'></i>
+                              </button> 
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-outline-light d-inline-block d-lg-none ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ms-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link text-white" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Page</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </nav>
+
+            <div class="card featured">
+                <h5 class="card-header">Featured</h5>
+                <div class="card-body">
+                  <h5 class="card-title">Find the car that best suits you</h5>
+                  <p class="card-text">We will search our inventory for the right car using your preferences!</p>
+                  <a href="#" class="btn btn-outline-dark btn-featured">Take Quiz</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
+                    <div class="card bg-dark text-white" style="width: 100%;">
+                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">2014 Toyota 4Runner</h5>
+                          <p class="card-text text-white" >Leather Seats, Reclining, Affordable</p>
+                          
+                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
+                    <div class="card bg-dark text-white" style="width: 100%;">
+                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">2015 Toyota Prius</h5>
+                          <p class="card-text text-white" >Comfortable, Fabric, 4-Seater</p>
+                          
+                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
+                    <div class="card bg-dark text-white" style="width: 100%;">
+                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text text-white" >Toyota</p>
+                          
+                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
+                    <div class="card bg-dark text-white" style="width: 100%;">
+                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text text-white" >Toyota</p>
+                          
+                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
+                    <div class="card bg-dark text-white" style="width: 100%;">
+                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text text-white" >Toyota</p>
+                          
+                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
+                    <div class="card bg-dark text-white" style="width: 100%;">
+                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text text-white" >Toyota</p>
+                          
+                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
+                    <div class="card bg-dark text-white" style="width: 100%;">
+                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text text-white" >Toyota</p>
+                          
+                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
+                    <div class="card bg-dark text-white" style="width: 100%;">
+                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text text-white" >Toyota</p>
+                          
+                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
+                    <div class="card bg-dark text-white" style="width: 100%;">
+                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text text-white" >Toyota</p>
+                          
+                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
+                    <div class="card bg-dark text-white" style="width: 100%;">
+                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text text-white" >Toyota</p>
+                          
+                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
+                    <div class="card bg-dark text-white" style="width: 100%;">
+                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text text-white" >Toyota</p>
+                          
+                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
+                    <div class="card bg-dark text-white" style="width: 100%;">
+                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text text-white" >Toyota</p>
+                          
+                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
+                    <div class="card bg-dark text-white" style="width: 100%;">
+                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text text-white" >Toyota</p>
+                          
+                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
+                    <div class="card bg-dark text-white" style="width: 100%;">
+                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text text-white" >Toyota</p>
+                          
+                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
+                    <div class="card bg-dark text-white" style="width: 100%;">
+                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text text-white" >Toyota</p>
+                          
+                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             
+            
+            
+              
         </div>
-    </nav>  
-
-    <div class="footer">
-        <table class="footer-table" width="100%">
-            <tr>
-                <td>Contact Us</td>
-                <td>Shopping Tools</td>
-                <td>Vehicles</td>
-                <td>About [Company Name]</td>
-            </tr>
-        </table>
     </div>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-row">
+            <div class="footer-col">
+              <h4>Company</h4>
+              <ul class="footer-elements">
+                <li>
+                  <a href="#">Services</a>
+                  <a href="#">About us</a>
+                  <a href="#">Contact us</a>
+                  <a href="#"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Get Help</h4>
+              <ul class="footer-elements">
+                <li>
+                  <a href=""></a>
+                  <a href=""></a>
+                  <a href=""></a>
+                  <a href=""></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Company</h4>
+              <ul class="footer-elements">
+                <li>
+                  <a href=""></a>
+                  <a href=""></a>
+                  <a href=""></a>
+                  <a href=""></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Follow us</h4>
+              <div class="footer-socials">
+                <!-- add icons from fav icon representing the social platforms -->
+                <a href=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+    
 
 </body>
 

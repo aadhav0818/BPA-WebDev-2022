@@ -7,7 +7,7 @@
 }
 
 .footer-container {
-  max-width: 1170px;
+  max-width: 1370px;
   margin:auto;
 }
 
@@ -19,8 +19,7 @@
 .footer-elements {
   list-style: none;
   margin-left: 0;
-  float: left;
-  padding-left: 0;
+  padding-left: 32%;
 }
 
 
@@ -31,13 +30,12 @@
 
 .footer-col {
   width: 25%;
-  padding: 0 1rem;
 }
 
 .footer-col h4 {
+  padding-left: 32%;
   font-family: 'Ubuntu';
-  font-size: 1rem;
-  text-transform: capitalize;
+  font-size: 1.4rem;
   color: #fff;
   margin-bottom: .7rem;
   font-family: 'Inter Tight', sans-serif;
@@ -59,3 +57,24 @@
   color: #fff;
   padding-left: .6rem;
 }
+
+@media(max-width: 800px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  .footer-elements {
+    padding-left: 31%;
+  }
+
+  .footer-col h4 {
+    padding-left: 31%;
+    font-size: 1rem;
+  }
+
+  .footer-col ul li a{
+    font-size: .75rem;
+  }
+}
+

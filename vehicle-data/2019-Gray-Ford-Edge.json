@@ -1,0 +1,9 @@
+{
+    "model":"Edge",
+    "price":23992,
+    "color":"Gray",
+    "brand":"Ford",
+    "year":2019,
+    "miles":50235,
+    "type":"SUV"
+}

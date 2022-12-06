@@ -1,0 +1,9 @@
+{
+    "model":"Escape",
+    "price":29001,
+    "color":"Red",
+    "brand":"Ford",
+    "year":2021,
+    "miles":42783,
+    "type":"SUV"
+}

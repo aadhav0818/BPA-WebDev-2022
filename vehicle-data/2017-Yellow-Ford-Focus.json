@@ -1,0 +1,9 @@
+{
+    "model":"Focus",
+    "price":16298,
+    "color":"Yellow",
+    "brand":"Ford",
+    "year":2017,
+    "miles":70000,
+    "type":"Sedan"
+}

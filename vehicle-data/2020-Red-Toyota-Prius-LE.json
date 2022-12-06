@@ -1,9 +1,9 @@
 {
-    "model":"Camry SE",
-    "price":31758,
+    "model":"Prius LE",
+    "price":19367,
     "color":"Red",
     "brand":"Toyota",
     "year":2020,
-    "miles":43823,
+    "miles":28973,
     "type":"Sedan"
 }

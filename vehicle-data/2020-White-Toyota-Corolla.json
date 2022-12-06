@@ -1,0 +1,9 @@
+{
+    "model":"Corolla",
+    "price":24998,
+    "color":"White",
+    "brand":"Toyota",
+    "year":2020,
+    "miles":38822,
+    "type":"Hatchback"
+}

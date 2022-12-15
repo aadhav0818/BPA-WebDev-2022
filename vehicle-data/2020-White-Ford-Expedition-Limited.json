@@ -1,9 +1,9 @@
 {
-    "model":"Explorer",
-    "price":24123,
+    "model":"Expedition Limited",
+    "price":54448,
     "color":"White",
     "brand":"Ford",
     "year":2020,
-    "miles":25711,
+    "miles":20112,
     "type":"SUV"
 }

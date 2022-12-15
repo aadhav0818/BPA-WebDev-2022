@@ -15,39 +15,34 @@
     font-family: 'Inter Tight', sans-serif;
 }
 
-.main-navbar-brand {
-    margin-right: -2rem;
-}
-
 .main-navbar {
     background-color: var(--dark);
-    color: white;
+    color: var(--light);
     z-index: 99;
 }
 
 .main-navbar-logo {
-    max-width: 70%;
-    margin-left: .6rem;
+    max-width: 45%;
+    margin-left: .5rem;
 }
 
 .main-nav-item {
-    padding: .05rem 1.2rem;
+    padding: .05rem .5rem;
 }
 
-a {
-    border-bottom: .1rem solid transparent;
-}
 
 .main-nav-link {
-    font-size: 1rem;
+    font-size: .9rem;
 }
 
 .search-bar {
     padding: .3rem;
 }
 
-.main-nav-active {
-    border-bottom: .1rem solid white;
+.search-btn {
+    background-color: var(--dark);
+    color: var(--light);
+    border: 0;
 }
 
 

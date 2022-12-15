@@ -71,7 +71,7 @@ label {
     color: #395B64;
 }
 
-button {
+.submit-btn {
     background: #395B64;
     width: 100px;
     border: none;

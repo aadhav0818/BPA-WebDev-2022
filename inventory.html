@@ -20,10 +20,10 @@
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-    
+    <script src="scripts/inventory.js" defer></script>
 </head>
 
-<body>
+<body onload="showCards();">
 
     <nav class="navbar main-navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
@@ -551,19 +551,8 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
-                    <div class="card bg-dark text-white" style="width: 100%;">
-                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">2014 Toyota 4Runner</h5>
-                          <p class="card-text text-white" >Leather Seats, Reclining, Affordable</p>
-                          
-                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
+            <div class="row" id="car-inventory">
+                <!-- <div class="col-sm-12 col-md-6 col-lg-3 " style="padding-top: 3rem;">
                     <div class="card bg-dark text-white" style="width: 100%;">
                         <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -583,150 +572,7 @@
                           <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
-                    <div class="card bg-dark text-white" style="width: 100%;">
-                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text text-white" >Toyota</p>
-                          
-                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
-                    <div class="card bg-dark text-white" style="width: 100%;">
-                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text text-white" >Toyota</p>
-                          
-                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
-                    <div class="card bg-dark text-white" style="width: 100%;">
-                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text text-white" >Toyota</p>
-                          
-                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
-                    <div class="card bg-dark text-white" style="width: 100%;">
-                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text text-white" >Toyota</p>
-                          
-                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
-                    <div class="card bg-dark text-white" style="width: 100%;">
-                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text text-white" >Toyota</p>
-                          
-                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
-                    <div class="card bg-dark text-white" style="width: 100%;">
-                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text text-white" >Toyota</p>
-                          
-                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
-                    <div class="card bg-dark text-white" style="width: 100%;">
-                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text text-white" >Toyota</p>
-                          
-                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
-                    <div class="card bg-dark text-white" style="width: 100%;">
-                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text text-white" >Toyota</p>
-                          
-                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
-                    <div class="card bg-dark text-white" style="width: 100%;">
-                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text text-white" >Toyota</p>
-                          
-                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
-                    <div class="card bg-dark text-white" style="width: 100%;">
-                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text text-white" >Toyota</p>
-                          
-                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
-                    <div class="card bg-dark text-white" style="width: 100%;">
-                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text text-white" >Toyota</p>
-                          
-                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
-                    <div class="card bg-dark text-white" style="width: 100%;">
-                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text text-white" >Toyota</p>
-                          
-                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3" style="padding-top: 3rem;">
-                    <div class="card bg-dark text-white" style="width: 100%;">
-                        <img src="./image-assets/car-buying.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text text-white" >Toyota</p>
-                          
-                          <a href="#" class="btn btn-outline-success btn-inventory-card">$ | Purchase</a>
-                        </div>
-                    </div>
-                </div>
+                </div> -->
             </div>
             
             

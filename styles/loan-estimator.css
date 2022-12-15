@@ -1,0 +1,85 @@
+body {
+    background-color: #716e6e;
+}
+
+h1 {
+    color: rgb(32, 32, 32);
+    font-size: 1.5rem;
+}
+
+span {
+    font-size: 1rem;
+}
+
+
+input, select {
+    float: right;
+}
+
+
+.entry-field {
+    padding: .6rem 0rem;
+    margin: .3rem .4rem;
+}
+
+.submit-btn {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.input-box {
+    width: 50%;
+    padding: .1rem 0rem .1rem 1rem;
+    text-align: center;
+}
+
+.loan-estimator-desc {
+    color: #403f3f;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+.loan-estimator {
+    width: 55rem;
+}
+
+.loan-estimator-input, .loan-estimator-results {
+    border-radius: 2%;
+    width: 26rem;
+    height: 26rem;
+    background-color: #fff;
+    padding: .9rem;
+    margin-top: 1rem;
+}
+
+.loan-estimator-input {
+    float: left;
+}
+
+.loan-estimator-results {
+    float: right;
+}
+
+.monthly-payment {
+    text-align: center;
+    background-color: #47748b;
+    border-radius: 4%;
+}
+
+.row-value {
+    float: right;
+}
+
+.monthly-price {
+    font-size: 4rem;
+}
+
+.month-subscript {
+    font-size: 1.2rem;
+}
+
+.monthly-payment-row {
+    margin: .8rem 0rem;
+    width: 100%;
+}

@@ -1,113 +1,137 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 
-<head>
-    <meta charset="utf-8">
-    <title>Contact Us VTERNAL</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
-    <link rel="stylesheet" href="./styles/navbar.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact Us</title>
+
+        <!-- Bootstrap CSS CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script defer src="https://use.fontawesome.com/releases/v6.1.1/js/all.js"></script>    
+    
+
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+        <link rel="stylesheet" href="./styles/navbar.css">
+        <link rel="stylesheet" href="./styles/contact-us.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    </head>
+
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="main-navbar-brand navbar-brand" href="#">
+              <img class="main-navbar-logo" src="./image-assets/logo-bold-no-padding.png" alt="vternal-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item main-nav-item">
+                  <a class="nav-link main-nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item main-nav-item">
+                  <a class="nav-link main-nav-link" href="inventory.html">Inventory</a>
+                </li>
+                <li class="nav-item main-nav-item">
+                  <a class="nav-link main-nav-link" href="#">Car Finder</a>
+                </li>
+                <li class="nav-item main-nav-item dropdown">
+                  <a class="nav-link main-nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Finance
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Financing with VTERNAL</a></li>
+                    <li><a class="dropdown-item" href="./loan-estimator.html">Loan Calculator</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Finance FAQ</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item main-nav-item">
+                  <a class="nav-link main-nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+                </li>
+                <li class="nav-item main-nav-item">
+                  <a class="nav-link main-nav-link" href="contact-us.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact Us</a>
+                </li>
+              </ul>
+              <form class="nav-item main-nav-item d-flex">
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
+            </div>
+          </div>
+      </nav>
+
+      <div class="container">
+          <h1>Contact Us!</h1>
+          <p>Any questions? We would love to help you! Please fill out the form or communicate with us through our email or phone number. <br> If you would like to meet in-person, you can meet our associates at the address provided below. </p>
+          <div class="contact-box">
+          <div class="contact-left">
+              <h3>Send your request</h3>
+              <form>
+                  <div class="input-row">
+                  <div class="input-group">
+                      <label>Name</label>
+                      <input type="text" placeholder="John Smith" required>
+                  </div>
+                  <div class="input-group">
+                      <label>Phone</label>
+                      <input type="text" placeholder="+1 972-699-999">
+                  </div>
+
+                  </div>
+                  <div class="input-row">
+                  <div class="input-group">
+                      <label>Email</label>
+                      <input type="email" placeholder="johnsmith@gmail.com" required>
+                  </div>
+                  <div class="input-group">
+                      <label>Product</label>
+                      <input type="text" placeholder="2015 Toyota Prius">
+                  </div>
+
+                  </div>
+
+                  <label>Message</label>
+                  <textarea rows="5" placeholder="Your Message" required></textarea>
+
+                  <button class="submit-btn" type="submit">SEND</button>
+              </form>
+          </div>
+          <div class="contact-right">
+              <h3>Reach us</h3>
+
+              <table>
+              <tr>
+                  <td>Email</td>
+                  <td>Vtenral@example.com</td>
+              </tr>
+
+              <tr>
+                  <td>Phone Number</td>
+                  <td>+1 972-567-890</td>
+              </tr>
+
+              <tr>
+                  <td>Address</td>
+                  <td>2190 Chubbing Drive<br>
+                  Frisco, Texas, 75036
+                  </td>
+              </tr>
+              </table>
+          </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styles/contact-us.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <nav class="navbar main-navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand navbar-text" href="#">
-                <img class="navbar-logo main-navbar-logo" src="image-assets/logo-bold-no-padding.png" alt="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item main-nav-item">
-                        <a class="nav-link main-nav-link navbar-text" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item main-nav-item">
-                        <a class="nav-link main-nav-link navbar-text" href="inventory.html">Inventory</a>
-                    </li>
-                    <li class="nav-item main-nav-item">
-                        <a class="nav-link main-nav-link navbar-text" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item main-nav-item">
-                        <a class="nav-link main-nav-link navbar-text" href="#">Car Finder</a>
-                    </li>
-                </ul>
-                <form class="form-inline nav-item main-nav-item">
-                    <input class="form-control mr-sm-2 search-bar" type="search" placeholder="Search" aria-label="Search">
-                </form>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container">
-        <h1>Contact Us!</h1>
-        <p>Any questions? We would love to help you! Please fill out the form or communicate with us through our email or phone number. <br> If you would like to meet in-person, you can meet our associates at the address provided below. </p>
-        <div class="contact-box">
-        <div class="contact-left">
-            <h3>Send your request</h3>
-            <form>
-                <div class="input-row">
-                <div class="input-group">
-                    <label>Name</label>
-                    <input type="text" placeholder="John Smith" required>
-                </div>
-                <div class="input-group">
-                    <label>Phone</label>
-                    <input type="text" placeholder="+1 972-699-999">
-                </div>
-
-                </div>
-                <div class="input-row">
-                <div class="input-group">
-                    <label>Email</label>
-                    <input type="email" placeholder="johnsmith@gmail.com" required>
-                </div>
-                <div class="input-group">
-                    <label>Product</label>
-                    <input type="text" placeholder="2015 Toyota Prius">
-                </div>
-
-                </div>
-
-                <label>Message</label>
-                <textarea rows="5" placeholder="Your Message" required></textarea>
-
-                <button type="submit">SEND</button>
-            </form>
-        </div>
-        <div class="contact-right">
-            <h3>Reach us</h3>
-
-            <table>
-            <tr>
-                <td>Email</td>
-                <td>Vtenral@example.com</td>
-            </tr>
-
-            <tr>
-                <td>Phone Number</td>
-                <td>+1 972-567-890</td>
-            </tr>
-
-            <tr>
-                <td>Address</td>
-                <td>2190 Chubbing Drive<br>
-                Frisco, Texas, 75036
-                </td>
-            </tr>
-            </table>
-        </div>
-    </div>
-  </div>
-
-</body>
+  </body>
 
 </html>

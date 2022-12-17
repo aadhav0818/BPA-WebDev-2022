@@ -20,12 +20,10 @@ body {
 }
 
 .contact-left {
-    flex-basis: 60%;
     padding: 40px 60px;
 }
 
 .contact-right {
-    flex-basis: 40%;
     padding: 40px;
     background: #A5C9CA;
     color: #fff;
@@ -100,4 +98,10 @@ tr td:first-child {
 
 tr td {
     padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .contact-box {
+        display: block;
+    }
 }

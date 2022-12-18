@@ -4,7 +4,7 @@ div {
 }
 
 body {
-    background: #353333;
+    background: #DAF4F5;
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
 }
@@ -20,12 +20,10 @@ body {
 }
 
 .contact-left {
-    flex-basis: 60%;
     padding: 40px 60px;
 }
 
 .contact-right {
-    flex-basis: 40%;
     padding: 40px;
     background: #A5C9CA;
     color: #fff;
@@ -71,7 +69,7 @@ label {
     color: #395B64;
 }
 
-button {
+.submit-btn {
     background: #395B64;
     width: 100px;
     border: none;
@@ -100,4 +98,10 @@ tr td:first-child {
 
 tr td {
     padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .contact-box {
+        display: block;
+    }
 }

@@ -34,8 +34,7 @@
 
 .footer-col h4 {
   padding-left: 32%;
-  font-family: 'Ubuntu';
-  font-size: 1.4rem;
+  font-size: 1rem;
   color: #fff;
   margin-bottom: .7rem;
   font-family: 'Inter Tight', sans-serif;
@@ -61,15 +60,15 @@
 @media(max-width: 800px){
   .footer-col{
     width: 50%;
-    margin-bottom: 30px;
+    margin-bottom: 2.2rem;
   }
 
   .footer-elements {
-    padding-left: 31%;
+    padding-left: 32%;
   }
 
   .footer-col h4 {
-    padding-left: 31%;
+    padding-left: 32%;
     font-size: 1rem;
   }
 

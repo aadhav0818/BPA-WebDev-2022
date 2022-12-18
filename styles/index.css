@@ -10,8 +10,8 @@
 
 .carousel {
     position: relative;
-    opacity: 0.9;
 }
+
 
 .carousel-text {
     color: var(--light);
@@ -23,6 +23,33 @@
     margin-left: 13%;
     margin-top: 8%;
     font-size: 3rem;
+}
+
+.service-section {
+    justify-content: center;
+}
+
+.service-tile {
+    margin: 3rem;
+    text-align: center;
+}
+
+.tile-img {
+    float: left;
+}
+
+.tile-img img {
+    max-width: 90%;
+}
+
+.tile-text {
+    font-size: 1rem;
+    padding: 1.5rem 2rem 1rem 2rem;
+    margin-top: 2rem;
+}
+
+.tile-btn {
+    margin-top: 1rem;
 }
 
 @media (max-width: 625px) {

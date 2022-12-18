@@ -9,14 +9,13 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.container {
+.contact-us-form {
     width: 80%;
     margin: 50px auto;
 }
 
 .contact-box {
     background: #fff;
-    display: flex;
 }
 
 .contact-left {
@@ -98,10 +97,4 @@ tr td:first-child {
 
 tr td {
     padding-top: 20px;
-}
-
-@media (max-width: 768px) {
-    .contact-box {
-        display: block;
-    }
 }

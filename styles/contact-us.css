@@ -10,16 +10,15 @@ body {
 }
 
 .contact-us-form {
-    width: 80%;
+    width: 70%;
     margin: 50px auto;
+    justify-content: center;
 }
 
-.contact-box {
-    background: #fff;
-}
 
 .contact-left {
     padding: 40px 60px;
+    background-color: #fff;
 }
 
 .contact-right {
@@ -40,10 +39,6 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-}
-
-.input-row .input-group {
-    flex-basis: 45%;
 }
 
 input {

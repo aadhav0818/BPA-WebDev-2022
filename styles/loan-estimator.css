@@ -27,6 +27,10 @@ input, select {
     margin-top: 1rem;
 }
 
+.loan-estimator {
+    justify-content: center;
+}
+
 .input-box {
     width: 50%;
     padding: .1rem 0rem .1rem 1rem;
@@ -40,25 +44,12 @@ input, select {
 }
 
 
-.loan-estimator {
-    width: 55rem;
-}
-
 .loan-estimator-input, .loan-estimator-results {
     border-radius: 2%;
-    width: 26rem;
-    height: 26rem;
     background-color: #fff;
-    padding: .9rem;
-    margin-top: 1rem;
-}
-
-.loan-estimator-input {
-    float: left;
-}
-
-.loan-estimator-results {
-    float: right;
+    padding: 1.9rem;
+    margin-top: 3rem;
+    margin-left: 1.5rem;
 }
 
 .monthly-payment {

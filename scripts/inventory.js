@@ -1,6 +1,462 @@
 function showCards()
 {
 
+    let vehicle_data = 
+    [
+        {
+            "id:": 1,
+            "model":"C 300 Sport",
+            "price":10538,
+            "color":"Red",
+            "brand":"Mercedes-Benz",
+            "year":2010,
+            "miles":112343,
+            "type":"Sedan"
+        },
+
+        {
+            "id:": 2,
+            "model":"M3 Base",
+            "price":39432,
+            "color":"Orange",
+            "brand":"BMW",
+            "year":2012,
+            "miles":49789,
+            "type":"Sedan"
+        },
+
+        {
+            "id": 3,
+            "model":"Impreza Premium",
+            "price":16950,
+            "color":"White",
+            "brand":"Subaru",
+            "year":2012,
+            "miles":54639,
+            "type":"Sedan"
+        },
+
+        {
+            "id": 4,
+            "model":"WRX STI",
+            "price":19967,
+            "color":"Orange",
+            "brand":"Subaru",
+            "year":2013,
+            "miles":68993,
+            "type":"Sedan"
+        },
+
+        {
+            "id": 5,
+            "model":"RX 350 BASE",
+            "price":17934,
+            "color":"Red",
+            "brand":"Lexus",
+            "year":2013,
+            "miles":125789,
+            "type":"SUV"
+        },
+
+        {
+            "id": 6,
+            "model":"528i",
+            "price":24599,
+            "color":"Brown",
+            "brand":"BMW",
+            "year":2014,
+            "miles":52341,
+            "type":"Sedan"
+        },
+
+        {
+            "id": 7,
+            "model":"Highlander SE",
+            "price":24639,
+            "color":"Green",
+            "brand":"Toyota",
+            "year":2014,
+            "miles":112392,
+            "type":"SUV"
+        },
+
+        {
+            "id": 8,
+            "model":"R8 4.2",
+            "price":81844,
+            "color":"Blue",
+            "brand":"Audi",
+            "year":2015,
+            "miles":27988,
+            "type":"Coupe"
+        },
+
+        {
+            "id": 9,
+            "model":"RDX",
+            "price":18320,
+            "color":"Gray",
+            "brand":"Acura",
+            "year":2015,
+            "miles":21321,
+            "type":"SUV"
+        },
+
+        {
+            "id": 10,
+            "model":"TLX",
+            "price":16632,
+            "color":"Gray",
+            "brand":"Acura",
+            "year":2015,
+            "miles":24490,
+            "type":"Sedan"
+        },
+
+        {
+            "id": 11,
+            "model":"LX 570 Base",
+            "price":36991,
+            "color":"Gray",
+            "brand":"Lexus",
+            "year":2015,
+            "miles":127651,
+            "type":"SUV"
+        },
+
+        {
+            "id": 12,
+            "model":"RAV4 LE",
+            "price":15950,
+            "color":"Gray",
+            "brand":"Toyota",
+            "year":2015,
+            "miles":74639,
+            "type":"SUV"
+        },
+
+        {
+            "id": 13,
+            "model":"Altima SV",
+            "price":16432,
+            "color":"Red",
+            "brand":"Nissan",
+            "year":2015,
+            "miles":89678,
+            "type":"Sedan"
+        },
+
+        {
+            "id": 14,
+            "model":"Avalon Limited",
+            "price":22757,
+            "color":"Tan",
+            "brand":"Toyota",
+            "year":2015,
+            "miles":45075,
+            "type":"Sedan"
+        },
+
+        {
+            "id": 15, 
+            "model":"Trax LTZ",
+            "price":15996,
+            "color":"Blue",
+            "brand":"Chevrolet",
+            "year":2016,
+            "miles":78323,
+            "type":"SUV"
+        },
+
+        {
+            "id": 16,
+            "model":"GLA 250 4MATIC",
+            "price":19452,
+            "color":"Grey",
+            "brand":"Mercedes-Benz",
+            "year":2016,
+            "miles":92452,
+            "type":"SUV"
+        },
+
+        {
+            "id": 17,
+            "model":"Murano Platinium",
+            "price":26750,
+            "color":"Orange",
+            "brand":"Nissan",
+            "year":2016,
+            "miles":98639,
+            "type":"SUV"
+        },
+
+        {
+            "id": 18,
+            "model":"MDX",
+            "price":21998,
+            "color":"Purple",
+            "brand":"Acura",
+            "year":2016,
+            "miles":19912,
+            "type":"SUV"
+        },
+
+        {
+            "id": 19,
+            "model":"Impala 2LT",
+            "price":19510,
+            "color":"Red",
+            "brand":"Chevrolet",
+            "year":2016,
+            "miles":54892,
+            "type":"Sedan"
+        },
+
+        {
+            "id": 20,
+            "model":"ES 350 Base",
+            "price":36789,
+            "color":"Silver",
+            "brand":"Lexus",
+            "year":2016,
+            "miles":44721,
+            "type":"Sedan"
+        },
+
+        {
+            "id": 21,
+            "model":"Sequoia Limited",
+            "price":37400,
+            "color":"Tan",
+            "brand":"Toyota",
+            "year":2016,
+            "miles":76347,
+            "type":"SUV"
+        },
+
+        {
+            "id": 22,
+            "model":"Q7",
+            "price":3998,
+            "color":"Gray",
+            "brand":"Audi",
+            "year":2017,
+            "miles":42114,
+            "type":"SUV"
+        },
+
+        {
+            "id": 23,
+            "model":"F-150 Limited",
+            "price":38998,
+            "color":"Red",
+            "brand":"Ford",
+            "year":2017,
+            "miles":19902,
+            "type":"Truck"
+        },
+
+        {
+            "id": 24,
+            "model":"Pathfinder SL",
+            "price":25996,
+            "color":"White",
+            "brand":"Nissan",
+            "year":2017,
+            "miles":56093,
+            "type":"SUV"
+        },
+
+        {
+            "id": 25,
+            "model":"Forester Premium 2.5i",
+            "price":17958,
+            "color":"White",
+            "brand":"Subaru",
+            "year":2017,
+            "miles": 94638,
+            "type":"Hatchback"
+        },
+
+        {
+            "id": 26,
+            "model":"Focus",
+            "price":16298,
+            "color":"Yellow",
+            "brand":"Ford",
+            "year":2017,
+            "miles":70000,
+            "type":"Sedan"
+        },
+
+        {
+            "model":"228i XDrive",
+            "price":28750,
+            "color":"Blue",
+            "brand":"BMW",
+            "year":2018,
+            "miles":29045,
+            "type":"Coupe"
+        },
+
+        {
+            "model":"Camaro ZL1",
+            "price":60661,
+            "color":"Blue",
+            "brand":"Chevrolet",
+            "year":2018,
+            "miles":15399,
+            "type":"Coupe"
+        },
+
+        {
+            "model":"Focus SE",
+            "price":18998,
+            "color":"Blue",
+            "brand":"Ford",
+            "year":2018,
+            "miles":38002,
+            "type":"Sedan"
+        },
+
+        {
+            "model":"4Runner Limited",
+            "price":35360,
+            "color":"Blue",
+            "brand":"Toyota",
+            "year":2018,
+            "miles":52432,
+            "type":"SUV"
+        },
+
+        {
+            "model":"ILX A-Spec",
+            "price":24820,
+            "color":"Gray",
+            "brand":"Acura",
+            "year":2018,
+            "miles":41443,
+            "type":"Sedan"
+        },
+
+        {
+            "model":"MDX Sport Hybrid",
+            "price":42012,
+            "color":"Gray",
+            "brand":"Acura",
+            "year":2018,
+            "miles":48561,
+            "type":"SUV"
+        },
+
+        {
+            "model":"Q5 55 Prestige",
+            "price":32998,
+            "color":"Gray",
+            "brand":"Audi",
+            "year":2018,
+            "miles":59120,
+            "type":"SUV"
+         },
+
+         {
+            "model":"Volt Premier",
+            "price":18559,
+            "color":"Gray",
+            "brand":"Chevrolet",
+            "year":2018,
+            "miles":82579,
+            "type":"Sedan"
+        },
+
+        {
+            "model":"S5 Sportback",
+            "price":54998,
+            "color":"Red",
+            "brand":"Audi",
+            "year":2018,
+            "miles":33215,
+            "type":"Coupe"
+        },
+
+        {
+            "model":"i3 Base",
+            "price":32878,
+            "color":"Red",
+            "brand":"BMW",
+            "year":2018,
+            "miles":31937,
+            "type":"Hatchback"
+        },
+
+        {
+            "model":"M5 Base",
+            "price":71497,
+            "color":"Red",
+            "brand":"BMW",
+            "year":2018,
+            "miles":27089,
+            "type":"Sedan"
+        },
+
+        {
+            "model":"WRX Premium",
+            "price":27996,
+            "color":"Red",
+            "brand":"Subaru",
+            "year":2018,
+            "miles":26093,
+            "type":"Sedan"
+        },
+
+        {
+            "model":"Cruze LS",
+            "price":18998,
+            "color":"Silver",
+            "brand":"Chevrolet",
+            "year":2017,
+            "miles":16641,
+            "type":"Sedan"
+        },
+
+        {
+            "model":"S 560 4MATIC",
+            "price":57657,
+            "color":"Silver",
+            "brand":"Mercedes-Benz",
+            "year":2018,
+            "miles":42150,
+            "type":"Sedan"
+        },
+
+        {
+            "model":"A6 2.0T Premium",
+            "price":24499,
+            "color":"White",
+            "brand":"Audi",
+            "year":2018,
+            "miles":37987,
+            "type":"Sedan"
+        },
+
+        {
+            "model":"S5 3.0T Prestige",
+            "price":50485,
+            "color":"White",
+            "brand":"Audi",
+            "year":2019,
+            "miles":27625,
+            "type":"Sedan"
+        },
+
+        
+
+
+
+
+
+    ]
+
     let main_inventory = document.getElementById("car-inventory")
     
     for(let i = 0; i < 100; i++)

@@ -1,12 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500&display=swap');
+
 div {
     margin: 0;
     padding: 0;
 }
 
+.contact-title {
+    animation: fadeInDown 2s ease;
+    background: #4f4d4d;
+    padding: 10px; 
+    padding-left: 1.5rem;
+    font-size: 25px;
+    border-bottom: 2px solid;
+    transition: 1s;
+}
+
+.contact-title:hover {
+    transition: 1s;
+    color: rgb(85, 148, 192);
+    border-bottom: 2px solid rgb(85, 148, 192);
+}
+
+@keyframes fadeInDown {
+    0% {
+       opacity: 0;
+       transform: translateX(-2000px) translateY(-60px);
+    }
+    50% {
+       opacity: 0.5;
+       transform: translateX(0) translateY(-60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        transform: translateX(0);
+    }
+} 
+
+
+
+
 body {
-    background: #DAF4F5;
+    background: #353333;
     font-size: 14px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter Tight', sans-serif;
+    color: #fff;
 }
 
 .contact-us-form {
@@ -15,7 +53,7 @@ body {
 }
 
 .contact-box {
-    background: #fff;
+    background: #353333;
 }
 
 .contact-left {
@@ -24,7 +62,7 @@ body {
 
 .contact-right {
     padding: 40px;
-    background: #A5C9CA;
+    background: #353333;
     color: #fff;
 }
 
@@ -49,14 +87,16 @@ h1 {
 input {
     width: 100%;
     border: none;
-    border-bottom: 1px solid #ccc;
+    background-color: #353333;
+    border: 2px solid #ccc;
     outline: none;
-    padding-bottom: 5px;
+    padding: 5px;
 }
 
 textarea {
+    background-color: #353333;
     width: 100%;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     outline: none;
     padding: 10px;
     box-sizing: border-box;
@@ -65,7 +105,7 @@ textarea {
 label {
     margin-bottom: 6px;
     display: block;
-    color: #395B64;
+    color: #fff;
 }
 
 .submit-btn {
@@ -81,10 +121,11 @@ label {
 }
 
 .contact-left h3 {
-    color: #395B64;
+    color: #fff;
     font-weight: 600;
     margin-bottom: 30px;
 }
+
 
 .contact-right h3 {
     font-weight: 600;

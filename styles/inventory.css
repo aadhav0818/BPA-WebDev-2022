@@ -7,7 +7,7 @@
     --light: #EEEEEE;
     --dark: #212121;
 }
-
+    
 .featured {
 	background: linear-gradient(-45deg, #869fb1, #7cb7ca, #b4c4ca, #5c9499);
 	background-size: 400% 400%;

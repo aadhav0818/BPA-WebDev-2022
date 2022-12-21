@@ -68,6 +68,17 @@
   font-size: 1.5rem;
 }
 
+.social-media {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.social-media a {
+  font-size: 1rem;
+  color: #c4c6c8;
+  text-align: center;
+}
+
 @media(max-width: 1000px){
   .footer-col{
     width: 50%;

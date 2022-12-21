@@ -80,54 +80,21 @@
 
 /* featured car section css */
 
+.car-card {
+    padding: 1rem 3rem;
+    width: 75%;
+    margin: auto;
+}
 
+.car-card img {
+    width: 40%;
+    border-radius: 10%;
+}
 
-.feat-vehicles {
-    max-width: 1200px;
-    display: flex;
-    padding: 0 2rem;
-    align-items: center;
+.car-card-body {
+    float: right;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
-    min-height: 100vh;
-    position: relative
 }
-
-.feat-vehicles i {
-    top: 50%;
-    height: 3rem;
-    width: 3rem;
-    cursor: pointer;
-    position: absolute;
-    font-size: 1.2rem;
-    text-align: center;
-    line-height: 3rem;
-    background: #fff;
-    border-radius: 50%;
-    transform: translateY(-50%);
-}
-
-.feat-vehicles i:first-child {
-    left: -1.5rem;
-}
-
-.feat-vehicles i:last-child {
-    right: -1.5rem;
-}
-
-.feat-vehicles .feat-carousel {
-    font-size: 0;
-    cursor: pointer;
-    white-space: nowrap;
-}
-
-.feat-carousel img {
-    object-fit: cover;
-    margin-left: .9rem;
-    width: calc(100% / 3);
-}
-
-.feat-carousel img:first-child {
-    margin-left: 0;
-}
-
-

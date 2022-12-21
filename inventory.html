@@ -89,15 +89,15 @@
                     <ul class="collapse list-unstyled" id="brandSubmenu">
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(1, 'brand', 'Acura')">
                                 <label class="form-check-label" for="flexCheckDefault">
-                                  Honda
+                                  Acura
                                 </label>
                             </div>
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(1, 'brand', 'Toyota')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                   Toyota
                                 </label>
@@ -105,7 +105,15 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(1, 'brand', 'Chevrolet')">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Chevrolet
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(1, 'brand', 'Nissan')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                   Nissan
                                 </label>
@@ -113,23 +121,39 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(1, 'brand', 'Subaru')">
                                 <label class="form-check-label" for="flexCheckDefault">
-                                  Mercedes
+                                  Subaru
                                 </label>
                             </div>
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(1, 'brand', 'Mercedes-Benz')">
                                 <label class="form-check-label" for="flexCheckDefault">
-                                  Infinity
+                                  Mercedes-Benz
                                 </label>
                             </div>
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(1, 'brand', 'Audi')">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Audi
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(1, 'brand', 'Lexus')">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Lexus
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(1, 'brand', 'Ford')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                   Ford
                                 </label>
@@ -137,9 +161,9 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(1, 'brand', 'BMW')">
                                 <label class="form-check-label" for="flexCheckDefault">
-                                  Land Rover
+                                  BMW
                                 </label>
                             </div>
                         </li>
@@ -213,7 +237,7 @@
                     <ul class="collapse list-unstyled" id="carTypeSubmenu">
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(3, 'type', 'SUV')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     SUV
                                 </label>
@@ -221,7 +245,7 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"  onclick="rebuildCards(3, 'type', 'Sedan')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     Sedan
                                 </label>
@@ -229,25 +253,25 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    Sports
-                                </label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    Mini
-                                </label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"  onclick="rebuildCards(3, 'type', 'Truck')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     Truck
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"  onclick="rebuildCards(3, 'type', 'Hatchback')">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Hatchback
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"  onclick="rebuildCards(3, 'type', 'Coupe')">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Coupe
                                 </label>
                             </div>
                         </li>
@@ -263,7 +287,7 @@
                     <ul class="collapse list-unstyled" id="colorSubmenu">
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"  onclick="rebuildCards(4, 'color', 'Black')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     Black
                                 </label>
@@ -271,7 +295,7 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"  onclick="rebuildCards(4, 'color', 'Gray')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     Gray
                                 </label>
@@ -279,31 +303,23 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"  onclick="rebuildCards(4, 'color', 'White')">
                                 <label class="form-check-label" for="flexCheckDefault">
-                                    Dark Gray
+                                    White
                                 </label>
                             </div>
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"  onclick="rebuildCards(4, 'color', 'Purple')">
                                 <label class="form-check-label" for="flexCheckDefault">
-                                    Blue
+                                    Purple
                                 </label>
                             </div>
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    Light Blue
-                                </label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"  onclick="rebuildCards(4, 'color', 'Red')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     Red
                                 </label>
@@ -311,15 +327,15 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(4, 'color', 'Blue')">
                                 <label class="form-check-label" for="flexCheckDefault">
-                                    Green
+                                    Blue
                                 </label>
                             </div>
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(4, 'color', 'Tan')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     Tan
                                 </label>
@@ -327,9 +343,41 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(4, 'color', 'Green')">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Green
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(4, 'color', 'Yellow')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     Yellow
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(4, 'color', 'Silver')">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Silver
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(4, 'color', 'Orange')">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Orange
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(4, 'color', 'Brown')">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Brown
                                 </label>
                             </div>
                         </li>
@@ -345,7 +393,39 @@
                     <ul class="collapse list-unstyled" id="yearSubmenu">
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '2010')">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    2010
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '2011')">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    2011
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '2012')">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    2012
+                                </label>
+                            </div>
+                        </li>   
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '2013')">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    2013
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '2014')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     2014
                                 </label>
@@ -353,7 +433,7 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '2015')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     2015
                                 </label>
@@ -361,7 +441,7 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '2016')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     2016
                                 </label>
@@ -369,7 +449,7 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '2017')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     2017
                                 </label>
@@ -377,7 +457,7 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '2018')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     2018
                                 </label>
@@ -385,7 +465,7 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '2019')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     2019
                                 </label>
@@ -393,7 +473,7 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '2020')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     2020
                                 </label>
@@ -401,7 +481,7 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '2021')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     2021
                                 </label>
@@ -409,7 +489,7 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '2022')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     2022
                                 </label>

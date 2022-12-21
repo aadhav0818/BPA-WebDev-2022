@@ -1,0 +1,30 @@
+.page-header-animation {
+    animation: fadeInDown 2s ease;
+    background: #4f4d4d;
+    color: white;
+    padding: 10px; 
+    padding-left: 1.5rem;
+    font-size: 25px;
+    transition: 1s;
+}
+
+.page-header-animation:hover {
+    transition: 1s;
+    color: rgb(85, 148, 192);
+}
+
+@keyframes fadeInDown {
+    0% {
+       opacity: 0;
+       transform: translateX(-2000px) translateY(-60px);
+    }
+    50% {
+       opacity: 0.5;
+       transform: translateX(0) translateY(-60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        transform: translateX(0);
+    }
+} 

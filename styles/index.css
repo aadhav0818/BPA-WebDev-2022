@@ -8,6 +8,11 @@
     --default_opacity: 0.9;
 }
 
+body
+{
+    background: #353333;
+}
+
 .car-carousel {
     position: relative;
 }

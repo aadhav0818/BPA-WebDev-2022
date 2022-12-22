@@ -186,7 +186,7 @@ let vehicle_data =
 
     {
         id: 5,
-        model:"RX 350L BASE",
+        model:"RX 350L Base",
         price:17934,
         color:"Red",
         brand:"Lexus",

@@ -47,7 +47,7 @@ let vehicle_data =
 
     {
         id: 5,
-        model:"RX 350L BASE",
+        model:"RX 350L Base",
         price:17934,
         color:"Red",
         brand:"Lexus",
@@ -608,7 +608,7 @@ let vehicle_data =
 
     {
         id: 57,
-        model:"GTR Premium coupe",
+        model:"GTR Premium Coupe",
         price:120876,
         color:"Silver",
         brand:"Nissan",

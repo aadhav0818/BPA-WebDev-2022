@@ -55,11 +55,13 @@ function selectVehicle(vehicleType, indx) {
     var btn = document.querySelectorAll(".body-btn")[indx];
     if(!preferredStyles.includes(vehicleType)) {
         btn.classList.remove("btn-outline-dark");
-        btn.classList.add("btn-light");
+        btn.classList.add("btn-secondary");
+        btn.style.color="white";
         preferredStyles.push(vehicleType);
     } else {
-        btn.classList.remove("btn-light");
+        btn.classList.remove("btn-secondary");
         btn.classList.add("btn-outline-dark");
+        btn.style.color="black";
         preferredStyles.splice(preferredStyles.indexOf(vehicleType), 1);
     }
 }
@@ -67,10 +69,16 @@ function selectVehicle(vehicleType, indx) {
 
 function findCars() {
     let maxPrice = priceInput.value;
+    if(maxPrice == 100000) {
+        maxPrice = 200000;
+    } 
     let maxMiles = mileageInput.value;
+    if(maxMiles == 150000) {
+        maxMiles = 200000;
+    }
     let bodyStyles = preferredStyles;
     if(maxPrice == null || maxMiles == null || bodyStyles.length == 0) {
-        alert("Make sure that all the fields are filled out properly!");
+        alert("Make sure that all the fields are filled out.");
         return;
     }
     document.querySelector(".car-quiz").remove();

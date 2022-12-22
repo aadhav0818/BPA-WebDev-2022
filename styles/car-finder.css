@@ -52,7 +52,7 @@ input[type=number] {
     width: 70%;
     padding: 1rem;
     margin: 3% auto;
-    border-radius: 2%;
+    border-radius: 1%;
 }
 
 .question-container {
@@ -88,11 +88,10 @@ input[type=number] {
 }
 
 .body-style button {
-    width: 90px;
+    width: 80%;
     margin: 1rem 0;
     padding: 2%;
     color: black;
- 
 }
 
 .body-style:last-child {
@@ -110,7 +109,7 @@ input[type=number] {
 }
 
 .submit-btn-container button {
-    width: 60%;
+    width: 70%;
 }
 
 .car-results {

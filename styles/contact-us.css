@@ -128,6 +128,7 @@ tr td {
     padding: 20px 40px;
   }
    .faq-question {
+    margin-top: 25px;
     cursor: pointer;
     background-color: #353333;
     color: #fff;

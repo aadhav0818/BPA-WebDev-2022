@@ -13,6 +13,11 @@ body {
     color: #fff;
 }
 
+.row 
+{
+    margin: 0;
+}
+
 .contact-us-form {
     width: 80%;
     margin: 50px auto;

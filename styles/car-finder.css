@@ -51,7 +51,7 @@ input[type=number] {
     background-color: #fff;
     width: 70%;
     padding: 1rem;
-    margin: 6% auto;
+    margin: 3% auto;
     border-radius: 2%;
 }
 
@@ -78,7 +78,7 @@ input[type=number] {
 
 /* question 3 css */
 .body-styles {
-    text-align: ;
+    text-align: center;
     padding: 2rem;
 }
 
@@ -101,11 +101,19 @@ input[type=number] {
 
 .submit-btn-container {
     text-align: center;
+    padding: auto;
     margin-bottom: 2rem;
 }
 
-.submit-btn-container button {
-    width: 30%;
+.submit-quiz {
+    padding: 1% 2%;
 }
 
+.submit-btn-container button {
+    width: 60%;
+}
+
+.car-results {
+    margin: 1rem;
+}
 

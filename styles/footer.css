@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500&display=swap');
 
-*{
+
+
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -19,7 +21,7 @@
 .footer-elements {
   list-style: none;
   margin-left: 0;
-  padding-left: 32%;
+  padding-left: 12%;
 }
 
 
@@ -33,13 +35,20 @@
 }
 
 .footer-col h4 {
-  padding-left: 32%;
+  padding-left: 12%;
   font-size: 1rem;
   color: #fff;
   margin-bottom: .7rem;
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   position: relative;
+}
+
+.dealership-info ul li span {
+  font-size: 1rem;
+  color: #bbb;
+  text-decoration: none;
+  font-weight: 300;
 }
 
 .footer-col ul li a{
@@ -57,23 +66,62 @@
   padding-left: .6rem;
 }
 
-@media(max-width: 800px){
+.social-media a {
+  font-size: 1.5rem;
+  color: #bbb;
+}
+
+.social-media {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+@media(max-width: 1000px){
   .footer-col{
     width: 50%;
     margin-bottom: 2.2rem;
   }
 
   .footer-elements {
-    padding-left: 32%;
+    padding-left: 24%;
   }
 
   .footer-col h4 {
-    padding-left: 32%;
+    padding-left: 24%;
     font-size: 1rem;
   }
 
   .footer-col ul li a{
-    font-size: .75rem;
+    font-size: 1rem;
   }
 }
 
+@media(max-width: 625px) {
+  .footer-col{
+    width: 50%;
+    margin-bottom: 2.2rem;
+  }
+
+  .footer-elements {
+    padding-left: 17%;
+  }
+
+  .footer-col h4 {
+    padding-left: 17%;
+  }
+}
+
+@media(max-width: 500px) {
+  .footer-col {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .footer-elements {
+    padding-left: 0%;
+  }
+
+  .footer-col h4 {
+    padding-left: 0%;
+  }
+}

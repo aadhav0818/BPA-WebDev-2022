@@ -1,22 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500&display=swap');
+
 div {
     margin: 0;
     padding: 0;
 }
 
+
 body {
-    background: #DAF4F5;
+    background: #353333;
     font-size: 14px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter Tight', sans-serif;
+    color: #fff;
 }
 
-.container {
+.contact-us-form {
     width: 80%;
     margin: 50px auto;
 }
 
 .contact-box {
-    background: #fff;
-    display: flex;
+    background: #353333;
 }
 
 .contact-left {
@@ -25,7 +28,7 @@ body {
 
 .contact-right {
     padding: 40px;
-    background: #A5C9CA;
+    background: #353333;
     color: #fff;
 }
 
@@ -50,15 +53,19 @@ h1 {
 input {
     width: 100%;
     border: none;
-    border-bottom: 1px solid #ccc;
+    background-color: #353333;
+    border: 2px solid #ccc;
+    color: white;
     outline: none;
-    padding-bottom: 5px;
+    padding: 5px;
 }
 
 textarea {
+    background-color: #353333;
     width: 100%;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     outline: none;
+    color: white;
     padding: 10px;
     box-sizing: border-box;
 }
@@ -66,7 +73,7 @@ textarea {
 label {
     margin-bottom: 6px;
     display: block;
-    color: #395B64;
+    color: #fff;
 }
 
 .submit-btn {
@@ -82,10 +89,11 @@ label {
 }
 
 .contact-left h3 {
-    color: #395B64;
+    color: #fff;
     font-weight: 600;
     margin-bottom: 30px;
 }
+
 
 .contact-right h3 {
     font-weight: 600;
@@ -100,8 +108,16 @@ tr td {
     padding-top: 20px;
 }
 
-@media (max-width: 768px) {
-    .contact-box {
-        display: block;
+@media (max-width: 994px) {
+    .contact-right {
+        padding: 60px;
+    }
+
+    tr td:first-child {
+      width: 75%;
+    }
+
+    tr td:last-child {
+        text-align: right;
     }
 }

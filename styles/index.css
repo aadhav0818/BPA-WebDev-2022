@@ -8,10 +8,15 @@
     --default_opacity: 0.9;
 }
 
-.carousel {
-    position: relative;
-    opacity: 0.9;
+body
+{
+    background: #353333;
 }
+
+.car-carousel {
+    position: relative;
+}
+
 
 .carousel-text {
     color: var(--light);
@@ -25,8 +30,107 @@
     font-size: 3rem;
 }
 
+.service-section {
+    justify-content: center;
+    background-color: #373636;
+}
+
+.service-tile {
+    margin: 1.5rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.tile-img {
+    float: left;
+}
+
+.tile-img img {
+    max-width: 70%;
+    border-radius: 5%;
+}
+
+.tile-text {
+    font-size: .9rem;
+    padding: 0 .3rem 0 0;
+    margin-top: 2rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.tile-text button {
+    font-size: .8rem;
+}
+
+.tile-btn {
+    margin-top: 1rem;
+    
+}
+
+.feat-vehicles-title {
+    margin-top: 2rem;
+    text-align: center;
+}
+
 @media (max-width: 625px) {
     .carousel-text {
         font-size: 1.6rem;
     }
 }
+
+/* featured car section css */
+
+.feat-vehicles {
+    background: #c4c6c8;
+}
+
+.feat-vehicles-title {
+    font-weight: 550;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+.car-card {
+    justify-content: center;
+    padding: 2% 20%;
+}
+
+.card-text-body {
+    padding-left: 8%;
+    padding-top: 8%;
+    color: #212121;
+}
+
+.card-img-body {
+    text-align: right;
+}
+
+.card-img {
+    border-radius: 3%;
+}
+
+@media (max-width: 878px) {
+    .card-text-body {
+        margin-top: 1rem;
+        text-align: center;
+    }
+}
+
+/* .carousel-control-prev-icon .carousel-control-next-icon {
+    color: #212121;
+} */
+
+.feat-nav-link {
+    color: #212121;
+    border-bottom: 2px solid #8f9192;
+}
+
+.feat-nav-link:hover {
+    color: #212121;
+}
+
+.active-nav-link {
+    border-bottom: 2px solid #212121;
+}
+
+

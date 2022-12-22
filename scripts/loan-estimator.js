@@ -27,7 +27,7 @@ function calculateMonthlyPayment() {
         var totalAmount = priceWithFees - downPay - tradeIn;
         var rate = getAPR(creditScore) / 12;
         var monthlyPay = ((priceWithFees - downPay - tradeIn) * ((rate * Math.pow(1 + rate, loanTerm)) / (Math.pow(1+rate, loanTerm) - 1)));
-        updateFields(monthlyPay.toFixed(2), price.toFixed(2), downPay.toFixed(2), tradeIn.toFixed(2), (priceWithFees - price).toFixed(2), totalAmount.toFixed(2));
+        updateFields(monthlyPay.toFixed(2), price.toFixed(2), downPay.toFixed(2), tradeIn.toFixed(2), (priceWithFees - price).toFixed(2), totalAmount.toFixed(2), getAPR(creditScore));
     }
 }
 
@@ -48,12 +48,14 @@ function getAPR(rating) {
     }
 }
 
-function updateFields(monthlyPay, price, downPay, tradeIn, otherFees, totalAmount) {
-    document.querySelector(".monthly-price").innerHTML = "$" + monthlyPay.toLocaleString("en-US");
-    document.querySelector(".vehicle-price").innerHTML = "$" + price.toLocaleString("en-US");
-    document.querySelector(".down-payment").innerHTML = "$" + downPay.toLocaleString("en-US");
-    document.querySelector(".trade-in").innerHTML = "$" + tradeIn.toLocaleString("en-US");
-    document.querySelector('.other-fees').innerHTML = "$" + otherFees.toLocaleString("en-US");
-    document.querySelector(".total-amount").innerHTML = "$" + totalAmount.toLocaleString("en-US");
-    document.querySelector(".est-monthly-payment").innerHTML = "$" + monthlyPay.toLocaleString("en-US");
+function updateFields(monthlyPay, price, downPay, tradeIn, otherFees, totalAmount, apr) {
+    const commaFormatter = Intl.NumberFormat('en-US');
+    document.querySelector(".monthly-price").innerHTML = "$" + commaFormatter.format(monthlyPay);
+    document.querySelector(".vehicle-price").innerHTML = "$" + commaFormatter.format(price);
+    document.querySelector(".down-payment").innerHTML = "$" + commaFormatter.format(downPay);
+    document.querySelector(".trade-in").innerHTML = "$" + commaFormatter.format(tradeIn);
+    document.querySelector('.other-fees').innerHTML = "$" + commaFormatter.format(otherFees);
+    document.querySelector(".total-amount").innerHTML = "$" + commaFormatter.format(totalAmount);
+    document.querySelector(".est-monthly-payment").innerHTML = "$" + commaFormatter.format(monthlyPay);
+    document.querySelector(".apr-value").innerHTML = "Estimated APR " + ((apr * 100).toFixed(2)) + "%";
 }

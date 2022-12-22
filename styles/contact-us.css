@@ -55,6 +55,7 @@ input {
     border: none;
     background-color: #353333;
     border: 2px solid #ccc;
+    color: white;
     outline: none;
     padding: 5px;
 }
@@ -64,6 +65,7 @@ textarea {
     width: 100%;
     border: 2px solid #ccc;
     outline: none;
+    color: white;
     padding: 10px;
     box-sizing: border-box;
 }
@@ -104,4 +106,18 @@ tr td:first-child {
 
 tr td {
     padding-top: 20px;
+}
+
+@media (max-width: 994px) {
+    .contact-right {
+        padding: 60px;
+    }
+
+    tr td:first-child {
+      width: 75%;
+    }
+
+    tr td:last-child {
+        text-align: right;
+    }
 }

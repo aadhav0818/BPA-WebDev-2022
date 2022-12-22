@@ -121,3 +121,49 @@ tr td {
         text-align: right;
     }
 }
+
+.faq {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 40px;
+  }
+   .faq-question {
+    margin-top: 25px;
+    cursor: pointer;
+    background-color: #353333;
+    color: #fff;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+   .faq-question::after {
+    content: "+";
+    font-size: 18px;
+    margin-right: 10px;
+  }
+   .faq-question.active::after {
+    content: "-";
+  }
+   .faq-answer {
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 20px;
+    border-radius: 4px;
+    display: none;
+    transition: max-height 650ms;
+  }
+   .faq-answer.active {
+    display: block;
+  }
+   @media (max-width: 600px) {
+    .faq-question {
+      display: block;
+      margin-bottom: 20px;
+    }
+    .faq-answer {
+      display: block;
+    }
+  }
+ 

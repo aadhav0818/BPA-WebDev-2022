@@ -8,7 +8,7 @@ const trucksFP = ["./vehicle-images/2017-Red-Ford-F-150-Limited.jpg", "./vehicle
 
 const suvsNames = ["Toyota 4Runner Limited", "Audi Q7", "Mercedes-Benz AMG GLE 43 4-MATIC", "Chevrolet Tahoe LS"];
 const suvsCTAs = ["Make every ride an adventure.", "Drive comfortably in style.", "Luxurious. Stylish. Intuitive.", "Take your family adventures above and beyond."];
-const suvsFP = ["./vehicle-images/2018-Blue-Toyota-4Runner-Limited.jpg", "./vehicle-images/2017-Gray-Audi-Q7.jpg", "./vehicle-images/2020-Blue-Mercedes-AMG-GLE-43-4MATIC.jpg", "./vehicle-images/2021-White-Chevrolet-Tahoe-LS.jpg"];
+const suvsFP = ["./vehicle-images/2018-Blue-Toyota-4Runner-Limited.jpg", "./vehicle-images/2017-Gray-Audi-Q7-Premium-Plus.jpg", "./vehicle-images/2020-Blue-Mercedes-AMG-GLE-43-4MATIC.jpg", "./vehicle-images/2021-White-Chevrolet-Tahoe-LS.jpg"];
 
 var currVehicle = "car";
 

@@ -11,10 +11,10 @@ body {
   float: left;    
    margin: 0 0 0 15px;
   }
-  .title-text
-  {
-    margin-left: 1rem;
-  }
+.title-text
+{
+  margin-left: 1rem;
+}
 
 
 
@@ -166,7 +166,7 @@ body {
   top: 20px;
   margin-bottom: 20px;
 }
-
+  
 
 .test {
   margin-left: 10px;

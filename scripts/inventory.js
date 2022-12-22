@@ -763,7 +763,7 @@ let vehicle_data =
     {
         id: 71,
         model:"Q7 Premium Plus",
-        price:3998,
+        price:39998,
         color:"Gray",
         brand:"Audi",
         year:2017,

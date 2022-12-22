@@ -1,14 +1,14 @@
 const carsNames = ["Toyota Supra", "Acura ILX A-Spec", "Chevrolet Camaro ZL1", "Mercedes-Benz CLA-250"];
 const carsCTAs = ["Power up your drive with the Supra.", "Look sharp at every turn.", "Go above and beyond the ordinary.", "Luxurious. Fast. Comfortable."];
-const carsFP = ["./vehicle-images/2020-Yellow-Toyota-Supra.jpg", "./vehicle-images/2021-White-Acura-ILX-A-Spec.jpg", "./vehicle-images/2018-Blue-Chevrolet-Camaro-ZL1.jpg", "./vehicle-images/2020-Black-Mercedes-Benz-CLA-250.jpg"];
+const carsFP = ["./vehicle-images/2020-Yellow-Toyota-Supra.jpg", "./vehicle-images/2021-White-Acura-ILX-A-Spec.jpg", "./vehicle-images/2018-Blue-Chevrolet-Camaro-ZL1.jpg", "./vehicle-images/2020-Black-Mercedes-CLA-250.jpg"];
 
-const trucksNames = ["Ford F150", "Chevrolet Silverado 2500", "Nissan Titan Pro 4X", "Toyota Tacoma SR5"];
+const trucksNames = ["Ford F-150 Limited", "Chevrolet Silverado 2500", "Nissan Titan Pro 4X", "Toyota Tacoma SR5"];
 const trucksCTAs = ["Tough from the ground up.", "Built to last. Born to play.", "Level up your adventures.", "Built to withstand trails and rough terrains."];
-const trucksFP = ["./vehicle-images/2017-Red-Ford-F150-Limited.jpg", "./vehicle-images/2020-Silver-Chevrolet-Silverado-2500-HD.jpg", "./vehicle-images/2019-Orange-Nissan-Titan-Pro4x.jpg", "./vehicle-images/2021-Gray-Toyota-Tacoma-SR5.jpg"];
+const trucksFP = ["./vehicle-images/2017-Red-Ford-F-150-Limited.jpg", "./vehicle-images/2020-Silver-Chevrolet-Silverado-2500-HD-271.jpg", "./vehicle-images/2019-Orange-Nissan-Titan-Pro4x.jpg", "./vehicle-images/2021-Gray-Toyota-Tacoma-SR5.jpg"];
 
 const suvsNames = ["Toyota 4Runner Limited", "Audi Q7", "Mercedes-Benz AMG GLE 43 4-MATIC", "Chevrolet Tahoe LS"];
 const suvsCTAs = ["Make every ride an adventure.", "Drive comfortably in style.", "Luxurious. Stylish. Intuitive.", "Take your family adventures above and beyond."];
-const suvsFP = ["./vehicle-images/2018-Blue-Toyota-4Runner-Limited.jpg", "./vehicle-images/2017-Gray-Audi-Q7.jpg", "./vehicle-images/2020-Blue-Mercedes-Benz-AMG-GLE-43-4MATIC.jpg", "./vehicle-images/2021-White-Chevrolet-Tahoe-LS.jpg"];
+const suvsFP = ["./vehicle-images/2018-Blue-Toyota-4Runner-Limited.jpg", "./vehicle-images/2017-Gray-Audi-Q7.jpg", "./vehicle-images/2020-Blue-Mercedes-AMG-GLE-43-4MATIC.jpg", "./vehicle-images/2021-White-Chevrolet-Tahoe-LS.jpg"];
 
 var currVehicle = "car";
 

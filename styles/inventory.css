@@ -31,7 +31,6 @@
 }
 
 
-
 .card {
     transition: .75s ease;
     box-shadow: 0 8px 8px -4px rgb(223, 241, 247);
@@ -139,9 +138,14 @@ a:focus {
     display: block;
 }
 
-#sidebar ul li a:hover {
+#sidebar ul li a.pages-danger:hover {
     color: var(--dark);
-    background: #fff;
+    background: #dc3545;
+}
+
+#sidebar ul li a.pages-info:hover {
+    color: var(--dark);
+    background: #0dcaf0;
 }
 
 #sidebar ul li.active>a,
@@ -173,10 +177,21 @@ ul.CTAs a {
     margin-bottom: 5px;
 }
 
+.pages-info
+{
+    border: 2px solid #0dcaf0;
+}
+
+.pages-danger
+{
+    border: 2px solid #dc3545;
+}
+
 a.pages-active {
     background: #fff;
     color: var(--dark);
 }
+ 
 
 
 

@@ -7,3 +7,12 @@ shaking-hands.jpg: https://cdn.gobankingrates.com/wp-content/uploads/2020/01/car
 car-sales.jpg: https://cdn-apgml.nitrocdn.com/LebpnhtoivqQZrhySxTgIGIqkErReVqW/assets/static/optimized/rev-69e2f46/wp-content/uploads/2022/02/car-sales.jpeg
 man-showing-car: https://www.nerdwallet.com/assets/blog/wp-content/uploads/2020/07/GettyImages-1138562750-770x462.jpg
 car-buying: https://media.ed.edmunds-media.com/non-make/carbuying/carbuying_1119154_717.jpg
+home_background_2.mp4: https://www.videvo.net/video/car-driving-through-icelandic-landscape/452786/
+home_background_3.mp4: https://www.pexels.com/video/roadtrip-on-snowy-road-857026/
+home_background_4.mp4: https://www.pexels.com/video/aerial-view-of-car-driving-along-coastal-road-5418130/
+first_reviewer.jpg: https://www.pexels.com/photo/smiling-woman-bought-a-brand-new-car-7144242/
+second_reviewer.jpg: https://www.pexels.com/photo/portrait-of-a-young-woman-holding-a-car-key-at-car-dealership-6817003/
+mission-image-one: https://www.pexels.com/photo/row-of-shiny-vehicles-on-parking-lot-of-car-market-5864152/
+mission-image-two: https://www.pexels.com/photo/close-up-of-men-shaking-hands-and-cars-in-background-7144199/
+mission-image-three: https://www.pexels.com/photo/people-in-couch-1024248/
+mission-image-four: https://www.pexels.com/photo/aerial-photo-of-building-395537/

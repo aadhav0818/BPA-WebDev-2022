@@ -11,12 +11,17 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/about-us.css">
     <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/page-header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles/footer.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
   
 </head>
 
 <body>
-    <!-- navbar -->
+<!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
        <a class="navbar-brand main-navbar-brand" href="./index.html">
@@ -30,7 +35,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item main-nav-item">
+          <li class="nav-item main-nav-item active">
             <a class="nav-link main-nav-link" href="./index.html">Home</a>
           </li>
           <li class="nav-item main-nav-item">
@@ -44,79 +49,136 @@
           <li class="nav-item main-nav-item">
             <a class="nav-link main-nav-link" href="./car-finder.html">Car Finder</a>
           </li>
-          <li class="nav-item main-nav-item active">
+          <li class="nav-item main-nav-item">
             <a class="nav-link main-nav-link" href="./about-us.html">About Us</a>
           </li>
           <li class="nav-item main-nav-item">
-            <a class="nav-link main-nav-link" href="./contact-us.html">Contact Us</a>
+            <a class="nav-link main-nav-link" href="./contact-us.html"
+              >Contact Us</a
+             >
             </li>
          </ul>
         </div>
       </div>
     </nav>
   
+    <div class="page-header-animation col-lg-12">
+      About Us
+    </div>
+
     <div class="container">
         <div class="row">
-            <div class="col">
-                <p class="text-center" id="Title">About us</p>
-            </div>
+          <div class="col">
+            <p class="paragraph-headers"> Our Values</p>
+          </div>
         </div>
+        
+
+        <div class="row values-text">
+          <div class="col">
+            <p><span class="bold-values">Quality:</span> Vternal is committed to offering high-quality vehicles and top-notch customer service.</p>
+          </div>
+        </div>
+        <div class="row values-text">
+          <div class="col">
+            <p><span class="bold-values">Transparency:</span> Vternal is committed to being transparent and straightforward in all of its business dealings.</p>
+          </div>
+        </div>
+        <div class="row values-text">
+          <div class="col">
+            <p><span class="bold-values">Fair pricing:</span> Vternal is committed to offering fair prices on all of its vehicles.</p>
+          </div>
+        </div>
+        <div class="row values-text">
+          <div class="col">
+            <p> <span class="bold-values">Selection:</span>  Vternal is committed to having a wide selection of vehicles to choose from.</p>
+          </div>
+        </div>
+        <div class="row values-text">
+          <div class="col">
+            <p> <span class="bold-values">Community involvement:</span> Vternal is committed to being an active member of the community and giving back through various initiatives and partnerships.</p>
+          </div>
+        </div>
+
+
+
         
         <div class="row info-row">
             <div class="col">
               <p class="paragraph-headers"> Our Mission</p>
-                <p class="text-center info-paragraph" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-
+              <img class="top-images" src="image-assets\mission-image-one.jpg" alt="">
+                
+                <p class="text-center info-paragraph" > Our mission at Vternal Motors is to provide our customers with a wide selection of high-quality, affordably-priced used vehicles, along with exceptional customer service and support. We are committed to offering a stress-free and transparent car-buying experience, and strive to earn the trust and loyalty of our customers through honesty, integrity, and fair pricing. Our ultimate goal is to help every customer find the perfect vehicle that meets their needs and budget, and to create long-lasting relationships built on trust and satisfaction. 
+             
+              
             </div>
         </div>
         <div class="row info-row">
           <div class="col">
-            <p class="paragraph-headers"> Our History</p>
-              <p class="text-center info-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+            
+            <p class="paragraph-headers">Our History</p>
+                <img class="top-images" src="image-assets\mission-image-two.jpg" alt="">
+                <p class="text-center info-paragraph">Vternal Motors was founded in August 2017 by a group of friends named Sai, Aadhav, Kavin, and Aditya, who had a passion for cars and a vision to create a dealership that would provide high-quality used vehicles at affordable prices. From the beginning, these group of friends placed a strong emphasis on customer service and satisfaction, building a team of knowledgeable and friendly sales staff who were dedicated to helping customers find the perfect vehicle.</p>
+              
+              
+            
+            
 
           </div>
-      </div>
+      
       <div class="info-row">
         <div class="col">
           <p class="paragraph-headers"> Why choose VTERNAL?</p>
-            <p class="text-center info-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+         <img  class="top-images" src="image-assets\mission-image-three.jpg" alt="">
+
+              <p class="text-center info-paragraph">At Vternal, we pride ourselves on offering our customers the best selection of high-quality vehicles at competitive prices. Our team of experienced sales representatives is dedicated to helping you find the perfect car to meet your needs and budget.
+  
+                In addition to our wide range of vehicles, we also offer financing options to help make your dream car a reality. Our finance team works with a network of lenders to secure the best rates and terms for our customers.
+                
+                At Vternal, we don't just want to sell you a car – we want to build a long-lasting relationship with you. That's why we offer top-notch customer service and support, both during the sales process and after you drive off the lot.
+                
+                So if you're in the market for a used car, we invite you to visit Vternal and see for yourself why we are the premier dealership in the area.
+              </p>
+            
+          </div>
+          
 
         </div>
-    </div><div class="info-row">
+    </div>
+    <div class="info-row">
       <div class="col">
-        <p class="paragraph-headers">Where are we located?</p>
-          <p class="text-center info-paragraph" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        <p class="paragraph-headers">Basic Dealership Information</p>
+          <img class ="top-images"src="image-assets\mission-image-four-PhotoRoom.jpg" alt="">
+           
+            <p class="text-center info-paragraph"> Vternal is a car dealership located in Dallas, Texas, that is open Monday through Saturday from 9:00 am to 9:00 pm and on Sunday from 11:00 am to 7:00 pm. At Vternal, we offer a wide selection of vehicles from various makes and models. Our team of experienced sales representatives is dedicated to helping you find the perfect car to meet your needs and budget. </p>
+        
 
       </div>
   </div>
+  <div class="row info-row">
+    <div class="col">
+     
+          <p class="paragraph-headers">Employees</p>
+
+    </div>
         <div class="row ">
             <div class="col-sm-12 col-md-6 col-lg-6 info-row">
                 <div class="card mb-3" style="max-width:  100%;">
                     <div class="row g-0">
                       <div class="col-md-4">
-                        <img src="https://provost.utexas.edu/wp-content/uploads/2022/06/Aniket-Sanghi-289x300.png" class="img-fluid rounded-start" alt="...">
+                        <img src="image-assets\Kavin-Raj.jpg" class="img-fluid rounded-start" alt="...">
+                        <a href="contact-us.html">
+                          <button type="button"  class="btn btn-primary btn-lg">Contact me</button>
+                        </a>
                       </div>
                       <div class="col-md-8">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          <h5 class="card-title">Saisarath Bolneni</h5>
+                          <p class="job-Title">Head of Sales</p>
+                          <p class="card-text">Saisarath Bolneni is a car sales manager with a wealth of experience in the automotive industry. He is skilled at identifying and targeting potential customers, negotiating deals, and providing excellent customer service. With his expertise and leadership, Saisarath has consistently exceeded sales targets and helped drive the dealership's success.</p>
+                          <p class="card-text"><small class="text-muted">Since August 2017</small></p>
+
+                          
                         </div>
                       </div>
                     </div>
@@ -127,12 +189,16 @@
                     <div class="row g-0">
                       <div class="col-md-4">
                         <img src="https://provost.utexas.edu/wp-content/uploads/2022/06/Aniket-Sanghi-289x300.png" class="img-fluid rounded-start" alt="...">
+                        <a href="contact-us.html">
+                          <button type="button"  class="btn btn-primary btn-lg">Contact me</button>
+                        </a>
                       </div>
                       <div class="col-md-8">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          <h5 class="card-title">Aadhav Ilangovan</h5>
+                          <p class="job-Title">Sales Representative</p>
+                          <p class="card-text" style= "padding-bottom: 4.5rem">Aadhav Ilangovan is a highly skilled car sales representative with a track record of consistently meeting and exceeding sales targets. He is knowledgeable about car financing and can help you find the right car to suit your needs.</p>
+                          <p class="card-text"><small class="text-muted">Since August 2017</small></p>
                         </div>
                       </div>
                     </div>
@@ -145,28 +211,36 @@
                     <div class="row g-0">
                       <div class="col-md-4">
                         <img src="https://provost.utexas.edu/wp-content/uploads/2022/06/Aniket-Sanghi-289x300.png" class="img-fluid rounded-start" alt="...">
+                        <a href="contact-us.html">
+                          <button type="button"  class="btn btn-primary btn-lg">Contact me</button>
+                        </a>
                       </div>
                       <div class="col-md-8">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          <h5 class="card-title">Kavin Raj</h5>
+                          <p class="job-Title">Sales Representative</p>
+                          <p class="card-text" >Kavin Raj is a highly skilled car sales representative known for his skill in online sales. He is knowledgeable about various makes and models and excels at building relationships with customers. His friendly and approachable demeanor and extensive product knowledge make him a helpful assistant to many of our customers. </p>
+                          <p class="card-text"><small class="text-muted">Since August 2017</small></p>
                         </div>
                       </div>
                     </div>
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 info-left">
-                <div class="card mb-3" style="max-width:  100%;">
+                <div class="card mb-3" style="max-width:  100%; "  >
                     <div class="row g-0">
                       <div class="col-md-4">
                         <img src="https://provost.utexas.edu/wp-content/uploads/2022/06/Aniket-Sanghi-289x300.png" class="img-fluid rounded-start" alt="...">
+                        <a href="contact-us.html">
+                          <button type="button"  class="btn btn-primary btn-lg">Contact me</button>
+                        </a>
                       </div>
                       <div class="col-md-8">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          <h5 class="card-title">Aditya Satrasala</h5>
+                          <p class="job-Title">Sales Representative</p>
+                          <p class="card-text"style= "padding-bottom: 3rem" >Aditya is a highly skilled car sales representative known for knowing all the cars on the lot. He is knowledgeable of all makes and models, which allows him to create a tailored shopping experience based on your needs and wants.</p>
+                          <p class="card-text"><small class="text-muted">Since August 2017</small></p>
                         </div>
                       </div>
                     </div>
@@ -181,7 +255,7 @@
                         <div class="card mb-3 testimonial" style="max-width:  100%;"class="review">
                           <div class="row g-0">
                             <div class="col-md-4">
-                              <img src="https://imageio.forbes.com/specials-images/imageserve/5f64397931669e167fc57eaf/0x0.jpg?format=jpg&width=1200" class="img-fluid rounded-start" alt="...">
+                              <img src="image-assets\first-reviewer.jpeg" class="img-fluid rounded-start" alt="...">
                             </div>
                             <div class="col-md-8">
                               <div class="card-body">
@@ -194,7 +268,8 @@
                                 </div>
                                 
                                 
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                
+                                <p class="card-text">I recently purchased a car from Vternal and had a great experience thanks to the helpfulness of Kavin Raj. He answered all my questions and made the process stress-free. I would definitely recommend Vternal and Kavin to anyone in the market for a used car. Thank you!</p>
                                 <p class="card-text"><small class="text-muted">May 2020</small></p>
                               </div>
                             </div>
@@ -205,13 +280,19 @@
                         <div class="card mb-3 testimonial" style="max-width:  100%;"class="review">
                             <div class="row g-0">
                               <div class="col-md-4">
-                                <img src="https://imageio.forbes.com/specials-images/imageserve/5f64397931669e167fc57eaf/0x0.jpg?format=jpg&width=1200" class="img-fluid rounded-start" alt="...">
+                                <img src="image-assets\second-reviewer.jpg" class="img-fluid rounded-start" alt="...">
                               </div>
                               <div class="col-md-8 ">
                                 <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                   <div class="stars">
+                                    <span><i class="fa-solid fa-star star"></i></span>
+                                    <span><i class="fa-solid fa-star star"></i></span>
+                                    <span><i class="fa-solid fa-star star"></i></span>
+                                    <span><i class="fa-solid fa-star star"></i></span>
+                                    <span><i class="fa-solid fa-star star"></i></span>
+                                  </div>
+                                  <p class="card-text">"I recently purchased a car Vternal and had a great experience. The website was easy to navigate and had all the information I needed to make an informed decision. The sales representative was helpful and answered all my questions, and the financing process was smooth and hassle-free. I would highly recommend this dealership to anyone looking for a used car."</p>
+                                  <p class="card-text"><small class="text-muted">May 2020</small></p>
                                 </div>
                               </div>
                             </div>
@@ -221,13 +302,23 @@
                         <div class="card mb-3 testimonial" style="max-width:  100%;"class="review">
                             <div class="row g-0">
                               <div class="col-md-4">
-                                <img src="https://imageio.forbes.com/specials-images/imageserve/5f64397931669e167fc57eaf/0x0.jpg?format=jpg&width=1200" class="img-fluid rounded-start" alt="...">
+                                <img src="image-assets\third-reviewer.jpg" class="img-fluid rounded-start" alt="...">
                               </div>
                               <div class="col-md-8">
                                 <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                  
+                                    <div class="stars">
+                                    <span><i class="fa-solid fa-star star"></i></span>
+                                    <span><i class="fa-solid fa-star star"></i></span>
+                                    <span><i class="fa-solid fa-star star"></i></span>
+                                    <span><i class="fa-solid fa-star star"></i></span>
+                                    <span><i class="fa-solid fa-star star"></i></span>
+                                  </div>
+                                  
+                                  
+                                  
+                                  <p class="card-text">I recently visited Vternal to purchase a car and was pleasantly surprised by the comfortable and welcoming sales environment. The sales representatives were friendly and attentive, and the dealership itself was clean and well-maintained. I would definitely recommend Vternal to anyone in the market for a car. Thank you for a great experience!</p>
+                                  <p class="card-text"><small class="text-muted">May 2020</small></p>
                                 </div>
                               </div>
                             </div>
@@ -244,10 +335,11 @@
                     </button> 
                   </div>
             </div>
-           
+          </div>
         </div>
 
         <!--footer-->
+    <!--footer-->
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-row row">
@@ -303,52 +395,11 @@
 
   </footer>
   
-        <!--<div class="row">
-          <div class="col">
-            <h1 class="inspection-heading">What makes our customers so happy? </h1>
-            <p class="inspection-text">A car that has earned that VTERNAL certified designation has one of the most rigorous certifications in the used car industry. Our vehicles go through hundreds of inspection points and fulfill tight age and mileage standards. Because the procedure is so thorough, VTERNAL vehicles come with an added warranty for five from the date of purchase. Don't hesitate to contact any of the VTERNAL members listed above for more information on our inspection process. Included below are some items that are checked during our inspection process</p>
-            <ul class="inspection-list">
-              <li>Engine - compartment, condition, oil level, air filter, battery check, and fuel system</li>
-              <li>Instrument & Interior Compartment - ABS, instrument panel, climate control, horn, windows and sunroof</li>
+  
+                  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 
-              <li>Pre-Test Drive - lights, wheels, tires and shock absorbers</li>
-              <li>Test Drive - transmission shifting, engine performance, and brake operation</li>
-              <li>Service Bay Inspection - transmission, brakes, steering system and suspension</li>
-              <li>Appearance - hood, grille, liftgate, bumper, and fenders</li>
-
-            </ul>
-            <h2 id ="certification-header">Example Certification</h2>
-            <img id ="certficat"src="image-assets\VTERNAL-certificatio.png" alt="">
-             <center><img src="image-assets\car-inspection.png" alt="car flat icon"></center>
-          </div>
-        </div>
-      -->
-    </div>    
-    <!--Card-->
-    <!--<div class="card mb-3 testimonial" style="max-width:  100%;">
-                            <div class="row g-0">
-                              <div class="col-md-4">
-                                <img src="https://imageio.forbes.com/specials-images/imageserve/5f64397931669e167fc57eaf/0x0.jpg?format=jpg&width=1200" class="img-fluid rounded-start" alt="...">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                      -->
-   
-
-
-
-                      <script defer src="https://use.fontawesome.com/releases/v6.1.1/js/all.js"></script>   
-                      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
-                      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-        
 </body>
 
 </html>

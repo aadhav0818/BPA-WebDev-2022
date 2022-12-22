@@ -18,46 +18,48 @@
 
 <body onload="showCards();">
 
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-         <a class="navbar-brand main-navbar-brand" href="./index.html">
-            <img
-            class="navbar-logo main-navbar-logo"
-            src="image-assets/logo-bold-no-padding.png"
-            alt="logo"/>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item main-nav-item">
-              <a class="nav-link main-nav-link" href="./index.html">Home</a>
+      <div class="container-fluid">
+       <a class="navbar-brand main-navbar-brand" href="./index.html">
+          <img
+          class="navbar-logo main-navbar-logo"
+          src="image-assets/logo-bold-no-padding.png"
+          alt="logo"/>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item main-nav-item active">
+            <a class="nav-link main-nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item main-nav-item">
+            <a class="nav-link main-nav-link" href="./inventory.html"
+              >Inventory</a
+            >
+          </li>
+          <li class="nav-item main-nav-item">
+            <a class="nav-link main-nav-link" href="./loan-estimator.html">Loan Estimator</a>
+          </li>
+          <li class="nav-item main-nav-item">
+            <a class="nav-link main-nav-link" href="./car-finder.html">Car Finder</a>
+          </li>
+          <li class="nav-item main-nav-item">
+            <a class="nav-link main-nav-link" href="./about-us.html">About Us</a>
+          </li>
+          <li class="nav-item main-nav-item">
+            <a class="nav-link main-nav-link" href="./contact-us.html"
+              >Contact Us</a
+             >
             </li>
-            <li class="nav-item main-nav-item active">
-              <a class="nav-link main-nav-link" href="./inventory.html">Inventory</a
-              >
-            </li>
-            <li class="nav-item main-nav-item">
-              <a class="nav-link main-nav-link" href="./loan-estimator.html">Loan Estimator</a>
-            </li>
-            <li class="nav-item main-nav-item">
-              <a class="nav-link main-nav-link" href="./car-finder.html">Car Finder</a>
-            </li>
-            <li class="nav-item main-nav-item">
-              <a class="nav-link main-nav-link" href="./about-us.html">About Us</a>
-            </li>
-            <li class="nav-item main-nav-item">
-              <a class="nav-link main-nav-link" href="./contact-us.html"
-                >Contact Us</a
-               >
-              </li>
-           </ul>
-          </div>
+         </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
   
-    <div class="page-header-animation col-lg-12">
+    <div class="page-header-animation to-top col-lg-12">
         Inventory
     </div>
 
@@ -66,7 +68,7 @@
         <nav id="sidebar">
         
             <ul class="list-unstyled components">
-                <li>
+                <li class="filter">
                     <a href="#brandSubmenu" data-bs-toggle="collapse" aria-expanded="false">
                         Brands
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill submenu-caret" viewBox="0 0 16 16">
@@ -150,13 +152,13 @@
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(1, 'brand', 'BMW')">
                                 <label class="form-check-label" for="flexCheckDefault">
-                                  BMW
+                                  Honda
                                 </label>
                             </div>
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class="filter">
                     <a href="#priceSubmenu" data-bs-toggle="collapse" aria-expanded="false">
                         Price
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill submenu-caret" viewBox="0 0 16 16">
@@ -166,7 +168,7 @@
                     <ul class="collapse list-unstyled" id="priceSubmenu">
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(2, 'price', '_lt10k')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     Less than $10000
                                 </label>
@@ -174,31 +176,31 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(2, 'price', '_10_25k')">
                                 <label class="form-check-label" for="flexCheckDefault">
-                                    $10000 - $25000
+                                    $10000 - $24999
                                 </label>
                             </div>
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(2, 'price', '_25_40k')">
                                 <label class="form-check-label" for="flexCheckDefault">
-                                    $25000 - $40000
+                                    $25000 - $39999
                                 </label>
                             </div>
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(2, 'price', '_40_55k')">
                                 <label class="form-check-label" for="flexCheckDefault">
-                                    $40000 - $55000
+                                    $40000 - $54999
                                 </label>
                             </div>
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(2, 'price', '_55_70k')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     $55000 - $70000
                                 </label>
@@ -206,7 +208,7 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(2, 'price', '_gt70k')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     More than $70000
                                 </label>
@@ -214,7 +216,7 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class="filter">
                     <a href="#carTypeSubmenu" data-bs-toggle="collapse" aria-expanded="false">
                         Vehicle Type
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill submenu-caret" viewBox="0 0 16 16">
@@ -264,7 +266,7 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class="filter">
                     <a href="#colorSubmenu" data-bs-toggle="collapse" aria-expanded="false">
                         Color
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill submenu-caret" viewBox="0 0 16 16">
@@ -370,7 +372,7 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class="filter">
                     <a href="#yearSubmenu" data-bs-toggle="collapse" aria-expanded="false">
                         Year
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill submenu-caret" viewBox="0 0 16 16">
@@ -380,7 +382,7 @@
                     <ul class="collapse list-unstyled" id="yearSubmenu">
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '2010')">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '_2010')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     2010
                                 </label>
@@ -388,7 +390,7 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '2011')">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '_2011')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     2011
                                 </label>
@@ -396,7 +398,7 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '2012')">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '_2012')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     2012
                                 </label>
@@ -404,7 +406,7 @@
                         </li>   
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '2013')">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '_2013')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     2013
                                 </label>
@@ -412,7 +414,7 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '2014')">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '_2014')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     2014
                                 </label>
@@ -420,7 +422,7 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '2015')">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '_2015')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     2015
                                 </label>
@@ -428,7 +430,7 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '2016')">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '_2016')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     2016
                                 </label>
@@ -436,7 +438,7 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '2017')">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '_2017')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     2017
                                 </label>
@@ -444,7 +446,7 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '2018')">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '_2018')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     2018
                                 </label>
@@ -452,7 +454,7 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '2019')">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '_2019')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     2019
                                 </label>
@@ -460,7 +462,7 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '2020')">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '_2020')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     2020
                                 </label>
@@ -468,7 +470,7 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '2021')">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '_2021')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     2021
                                 </label>
@@ -476,7 +478,7 @@
                         </li>
                         <li>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '2022')">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '_2022')">
                                 <label class="form-check-label" for="flexCheckDefault">
                                     2022
                                 </label>
@@ -486,20 +488,6 @@
                 </li>
             </ul>
 
-            <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="#" class="pages-active">Page 1</a>
-                </li>
-                <li>
-                    <a href="#" class="pages">Page 2</a>
-                </li>
-                <li>
-                    <a href="#" class="pages">Page 3</a>
-                </li>
-                <li>
-                    <a href="#" class="pages">Page 4</a>
-                </li>
-            </ul>
         </nav>
 
         <!-- Page Content  -->
@@ -527,6 +515,38 @@
                         </button>    
                     </div>
                     
+                    <div style="padding-left:1%">
+                        <button type="button" id="sidebarCollapse" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#IssuesModalCenter">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <span>More Info</span>
+                        </button>    
+                    </div>
+                    
+                    <div class="modal fade" id="IssuesModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                              <h5 class="modal-title text-white" id="ModalLongTitle">
+                                <i class="fa-solid fa-circle-info"></i>
+                                Info
+                              </h5>
+                            </div>
+                            <div class="modal-body text-white">
+                              If you are interested about our vision and you want to learn more about VTERNAL, please feel free to check our about us page!
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                              <a href = "about-us.html">
+                                <button type="button" class="btn btn-outline-primary">
+                                    About Us
+                                    <i class='fas fa-arrow-circle-right'></i>
+                                </button>
+                              </a>
+                            </div>
+                          </div>
+                        </div>1
+                    </div>
+
                     <div class="modal fade" id="LoanModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                           <div class="modal-content bg-dark">
@@ -571,18 +591,16 @@
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-outline-info">
-                                Contact Us
-                                <i class='fas fa-arrow-circle-right'></i>
-                              </button> 
+                              <a href = "contact-us.html">
+                                <button type="button" class="btn btn-outline-info">
+                                    Contact Us
+                                    <i class='fas fa-arrow-circle-right'></i>
+                                </button> 
+                             </a>
                             </div>
                           </div>
                         </div>
                     </div>
-
-                    <button class="btn btn-outline-light d-inline-block d-lg-none ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ms-auto">

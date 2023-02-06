@@ -17,6 +17,9 @@
       defer
       src="https://use.fontawesome.com/releases/v6.1.1/js/all.js"
     ></script>
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
     <script src="./scripts/chat.js"></script>
 
     <!-- Our Custom CSS -->
@@ -77,17 +80,15 @@
         <div class="entry-field">
           <span id="price-text">Vehicle Price</span>
           <input
-            type="number"
+            type="text"
             id="input-price"
             class="input-box input-field"
             value="25000"
-            min="10000"
-            step="1000"
             max="150000"
             title="Value must be a number from $0 to $150,000"
           />
+          
         </div>
-        <!-- <input type="range" min="0" max="150000" value="50000" step="1000" class="slider price-slider" /> -->
         <div class="entry-field">
           <span id="dp-text">Down Payment</span>
           <input
@@ -148,9 +149,9 @@
 
       <div class="loan-estimator-results col-lg-5 col-md-9 col-sm-8">
         <div class="monthly-payment-header">
-          <h1 class="results-header">Your Estimated Monthly Payment</h1>
+          <h1 class="results-header">Estimated Monthly Payment</h1>
           <div class="monthly-payment">
-            <span class="monthly-price">$0</span>
+            <span class="monthly-price">$0.00</span>
             <span class="month-subscript">/mo</span><br />
             <span class="apr-value">Estimated APR 0.00%</span>
           </div>
@@ -158,31 +159,31 @@
         <div class="monthly-payment-factors">
           <div class="monthly-payment-row">
             <span class="monthly-payment-text">Vehicle Price</span
-            ><span class="row-value vehicle-price">$0</span>
+            ><span class="row-value vehicle-price">$0.00</span>
           </div>
           <div class="monthy-payment-row">
             <span class="monthly-payment-text">Down Payment</span
-            ><span class="row-value down-payment">$0</span>
+            ><span class="row-value down-payment">$0.00</span>
           </div>
           <div class="monthly-payment-row">
             <span class="monthly-payment-text">Trade-In Value</span
-            ><span class="row-value trade-in">$0</span>
+            ><span class="row-value trade-in">$0.00</span>
           </div>
           <div class="monthly-payment-row">
             <span class="monthly-payment-text"
               >Other Fees (Tax, Title, and Registration)</span
-            ><span class="row-value other-fees">$0</span>
+            ><span class="row-value other-fees">$0.00</span>
           </div>
         </div>
         <hr />
         <div class="final-payments">
           <div class="monthly-payment-row">
             <span class="monthly-payment-text">Total Amount</span
-            ><span class="row-value total-amount">$0</span>
+            ><span class="row-value total-amount">$0.00</span>
           </div>
           <div class="monthly-payment-row">
             <span class="monthly-payment-text">Estimated Monthly Payment</span
-            ><span class="row-value est-monthly-payment">$0</span>
+            ><span class="row-value est-monthly-payment">$0.00</span>
           </div>
         </div>
       </div>

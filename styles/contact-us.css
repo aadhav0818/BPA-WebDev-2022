@@ -77,15 +77,15 @@ label {
 }
 
 .submit-btn {
-    background: #395B64;
+    transition: 1s ease;
     width: 100px;
-    border: none;
-    outline: none;
-    color: #fff;
     height: 35px;
-    border-radius: 30px;
     margin-top: 20px;
-    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+    box-shadow: 0px 5px 15px 0px rgba(9, 139, 214, 0.3);
+}
+
+.submit-btn:hover {
+    transition: 1s ease;
 }
 
 .contact-left h3 {
@@ -126,8 +126,10 @@ tr td {
     width: 80%;
     margin: 0 auto;
     padding: 20px 40px;
-  }
-   .faq-question {
+}
+
+.faq-question {
+    transition: 1s;
     margin-top: 25px;
     cursor: pointer;
     background-color: #353333;
@@ -137,33 +139,47 @@ tr td {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-   .faq-question::after {
+}
+.faq-question::after {
     content: "+";
     font-size: 18px;
     margin-right: 10px;
-  }
-   .faq-question.active::after {
+}
+.faq-question.active::after {
     content: "-";
-  }
-   .faq-answer {
+}
+
+.faq-answer {
     background-color: #f7f7f7;
     color: #333;
     padding: 20px;
     border-radius: 4px;
     display: none;
     transition: max-height 650ms;
-  }
-   .faq-answer.active {
+    animation: fadeIn 1s ease;
+}
+   
+.faq-answer.active {
     display: block;
-  }
-   @media (max-width: 600px) {
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@media (max-width: 600px) {
     .faq-question {
-      display: block;
-      margin-bottom: 20px;
+        display: block;
+        margin-bottom: 20px;
     }
     .faq-answer {
-      display: block;
+        display: block;
     }
-  }
- 
+}

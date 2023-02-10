@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500&display=swap%27');
+
+:root
+{
+    --primary: #5db5cec4;
+    --light: #EEEEEE;
+    --dark: #212121;
+}
+
+body
+{
+    font-family: 'Inter Tight', sans-serif;
+    background:#353333;
+}
+
+.availability-listing
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.vehicle-status
+{
+    background-color: #212529;
+    margin-top: 15px;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    transition: .5s ease;
+    box-shadow: 0px 4px 4px -2px rgb(223, 241, 247);
+}
+
+.vehicle-status:hover {
+    transition: .5s ease;
+    box-shadow: 0 0 0 0px #000000;
+}
+
+.vehicle-text
+{
+    color: white;
+}
+
+.page-search
+{
+    padding-bottom: 25vh;
+    padding-top: 25vh;
+    background-image: url("../image-assets/mountains.jpg");
+    
+}

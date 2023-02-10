@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500&display=swap');
+
+
+.contact-us-form {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group {
+    flex-basis: 45%;
+}
+
+input {
+    width: 100%;
+    border: none;
+    background-color: #353333;
+    border: 2px solid #ccc;
+    color: white;
+    outline: none;
+    padding: 5px;
+}
+
+textarea {
+    background-color: #353333;
+    width: 100%;
+    border: 2px solid #ccc;
+    outline: none;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+label {
+    margin-bottom: 6px;
+    display: block;
+    color: #fff;
+}
+
+.submit-btn {
+    transition: .8s ease;
+    height: 35px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(9, 139, 214, 0.3);
+}
+
+.submit-btn:hover {
+    transition: .8s ease;
+}
+

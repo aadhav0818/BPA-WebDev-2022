@@ -26,19 +26,19 @@ body {
   text-align: center;
 }
 
-
-
 .used-car-img img {
-  width: 575px;
-  height: 300px;
+  width: 80%;
   border-radius: 2%;
   margin-top: 110px;
 }
 
+.mission-statement-img {
+  text-align: center;
+}
+
 
 .mission-statement-img img {
-  width: 575px;
-  height: 300px;
+  width: 80%;
   border-radius: 2%;
   margin-top: 110px;
   margin-left: 2rem;
@@ -171,7 +171,8 @@ body {
 }
 
 .images-used{
-  min-width: 100%;
+  max-width: 100%;
+  
 }
 
 .team-item:hover .info{
@@ -180,4 +181,8 @@ body {
 
 .team-item:hover .social-icon{
   opacity: 1;
+}
+
+.team-pictures {
+  text-align: center;
 }

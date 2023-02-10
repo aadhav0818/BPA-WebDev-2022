@@ -1,263 +1,196 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500&display=swap');
-
-
 body {
-  background:linear-gradient(to right, #434343,black)
-  
-  
-}
-
-.title-image  {
-  float: left;    
-   margin: 0 0 0 15px;
-  }
-.title-text
-{
-  margin-left: 1rem;
+  background-color: #99b8c2;
 }
 
 
 
 
 
-.title {
-  color: #EEEEEE;
 
-  font-size: 4rem;
-  margin: 0%;
-  margin-bottom: 4rem;
-  padding-left: 4rem;
-  padding-top:1rem;
-  padding-bottom: 1rem;
-  transition: 0.5s ease;
-  letter-spacing:0.25rem;
-  background:linear-gradient(to right,#4a7bae,#5db5cec4);
-  
-}
-
-
-/* .info-row:hover {
-  transition: 0.5s ease;
-  transform: translate(-20px);
-  transition: 0.5s ease;
-}
-
-.info-left:hover {
-  transition: 0.5s ease;
-  transform: translate(20px);
-  transition: 0.5s ease;
-}
-*/
-
-
-.card {
-  transition: .5s ease;
-  box-shadow: 0 8px 8px -4px #5db5cec4;
+.section_subtitle{
+  margin-bottom: 7px;
+  padding-left: 7px;
+  font-size: 25px;
   width: 100%;
-  
+  line-height: 1;
+  text-transform: uppercase;
+  color: #716e6e;
+  border-left: 3px solid #bfa67a;
+  font-size: 700;
+
 }
 
-.stars {
+.history_script{
+  margin-right: 400px;
+}
 
+
+.used-car-img {
   text-align: center;
-
-  color: gold;
-  font-size: 2rem;
 }
 
 
 
-
-.card:hover {
-  transition: .5s ease;
-  box-shadow: 0 0 0 0px #EEEEEE;
+.used-car-img img {
+  width: 575px;
+  height: 300px;
+  margin-left: 300px;
+  border-radius: 2%;
+  margin-top: 110px;
 }
 
-/*.carousel-control-prev-icon .carousel-control-next {
-  transition: .5s ease;
-  box-shadow: 0 0 0 0px #EEEEEE;
-}
-*/
-.card {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding: 1rem;
-  background-color: #1b1d1f;
-  box-shadow: #EEEEEE;
-  color: #EEEEEE;
-  font-family: 'Inter Tight', sans-serif;
+
+.mission-statement-img img {
+  width: 575px;
+  height: 300px;
+  margin-left: 300px;
+  border-radius: 2%;
+  margin-top: 110px;
+
 }
 
-.testimonial {
-  background:linear-gradient(to right,#4a7bae,#5db5cec4);
-}
-
-.top-images
-{
+.btn-color-background{
  
-  width: 100%;
-}
-.paragraph-headers {
-  font-size: 3rem;
-  font-weight: 600;
-  color: #EEEEEE;
+  background-image: -webkit-linear-gradient(145deg,#5B5B5B 0%,#5B5B5B 0%, #3D3D3D 100%);
+  border: 1px solid #090909;
+  border-radius: 2px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.42857;
+  margin-bottom: 0;
+  padding: 12px 48px;
   text-align: center;
-  background:linear-gradient(to right,#4a7bae,#5db5cec4);
-  letter-spacing:0.25rem;
-  padding-top: 2rem;
-  padding-bottom:  2rem; ;
-  margin-bottom: 4rem;
-}
-
-.info-paragraph {
-  font-size: 1.5rem;
-  color: #EEEEEE;
-  font-weight: 400;
-  margin-bottom: 6rem;
-  margin-top: 3rem;
-  line-height: 3rem;
-  text-align: center;
-}
-.info-bullets
-{
-  font-size: 1.5rem;
-  color: #EEEEEE;
-  font-weight: 400;
-  margin-bottom: 6rem;
-  margin-top: 3rem;
-  line-height: 3.5rem;
-  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+  vertical-align: middle;
   
-}
-.btn-primary,.btn-primary:active, .btn-primary:visited {
-  background: linear-gradient(to right,#4a7bae,#5db5cec4) !important;
-  margin-top: 2rem;
-  border-color: transparent;
-  
-}
-.btn-primary:hover
-{
-  transition: .5s ease;
-  background: linear-gradient(to right,#4a7bae,#01c5fcc4) !important;
-  transition: .5s ease;
 
 }
 
-.carousel {
-  width: 100%;
-  margin-bottom: 2rem;
+.btn-color-background:hover{
+  text-decoration: none;
+  color: #272627;
+  background: transparent;
 }
 
-.carousel-control-prev-icon {
-  
-  filter: invert(100%);
-
+.values-item{
+  padding: 0 8px;
 }
-.carousel-control-next-icon {
-  filter: invert(100%);
-}
-*/
 
-.people {
-  border-radius: 50%;
-  width: 20%;
+.values-item ion-icon{
+  float: left;
+  font-size: 45px;
+  color: #bfa67a;
+  line-height: 45px;
+}
+
+.values-single-item{
+  margin-left: 65px;
+}
+
+#skills{
+  margin-top: 165px;
+}
+
+.skillbar{
   position: relative;
-  left: 5%;
-  top: 20px;
-  margin-bottom: 20px;
-}
-  
-
-.test {
-  margin-left: 10px;
-}
-
-.carousel-item {
+  display: block;
+  margin: 0 auto 20px;
   width: 100%;
+  height: 40px;
+  transition: 0.4s linear;
+  transition-property: width,background-color;
 }
 
-.carousel {
+.skillbar-title{
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.skillbar-bar{
+  height: 2px;
+  width: 80%;
+  background: #000;
+  border-radius: 3px;
+  float: left;
+}
+
+.skill_area p{
+  text-align: justify;
+  width: 90%;
+}
+
+.team-item{
   position: relative;
 }
 
-
-
-
-
-.inspection-heading {
-  color: #EEEEEE;
-  margin-top: 1rem;
-}
-
-.inspection-text {
-  color: #EEEEEE;
-  font-size: x-large;
-  margin-top: 2rem;
-  margin-left: 2rem;
-}
-
-.inspection-list {
-  color: #EEEEEE;
-  font-size: x-large;
-  margin-left: 4rem;
-  margin-top: 2rem;
-}
-
-li {
-  margin-top: 0.5rem;
-
-}
-
-#certification-header {
-  color: #EEEEEE;
-  margin-bottom: 1rem;
-}
-
-#certficat {
-  width: 70%;
-  margin-left: 2rem;
-}
-
-
-@media (max-width: 500){
-  .info-paragraph{
-    font-size: 1rem;
-  }
-}
-@media (max-width: 500){
-  .paragraph-headers{
-    font-size: 2rem;
-  }
-}@media (max-width: 500){
-  .info-paragraph{
-    font-size: 1rem;
-  }
-}
-
-
-@media (max-width: 992px)
-{
-  .paragraph-headers {
-    font-size: 2rem;
-    padding-top: 1.5rem;
-  padding-bottom:  1.5rem; 
-  margin-bottom: 2rem;
-  }
-}
-@media (max-width: 100px)
-{
-
-}
-.values-text
-{
-  font-size: 1.5rem;
+.team-item .info{
+  padding-top: 0;
+  text-align: center;
   color: white;
-  margin-bottom: 1.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all .8s;
 }
-.bold-values
-{
-  font-weight: 500;
+
+.team-item .info h5{
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  color: #bfa67a;
+  transition: all 0.5s;
 }
-.review {
-  background-color: blue;
+
+.team-item:hover .info h5{
+  margin-bottom: 10px;
 }
+
+.team-item .info h6{
+  font-size: 16px;
+  margin-bottom: 0px;
+  color: #eee;
+  transition: all 0.2s;
+}
+
+.team-item:hover .info h6{
+  margin-bottom: 10px;
+}
+
+
+.team-item:hover .info{
+  padding-top: 40%;
+}
+
+.team-item .social-icon{
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: all .5s;
+}
+
+.images-used{
+  min-width: 100%;
+}
+
+.team-item:hover .info{
+  opacity: 1;
+}
+
+.team-item:hover .social-icon{
+  opacity: 1;
+}
+
+
+
+
+
+
+

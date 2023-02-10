@@ -1,0 +1,56 @@
+body {
+    background-color: #99b8c2;
+    margin-right: 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.car-quiz-desc {
+    margin: 1rem 2rem;
+    padding: 6% 3%;
+}
+
+.car-quiz-text p  {
+    margin-top: 1.5rem;
+}
+
+.car-quiz-text button {
+    margin-top: 1.5rem;
+}
+
+.car-quiz-img {
+    text-align: center;
+}
+
+.car-quiz-img img {
+    width: 350px;
+    border-radius: 4%;
+}
+
+@media (max-width: 998px) {
+    .car-quiz-text {
+        text-align: center;
+    }
+
+    .car-quiz-img {
+        margin-top: 2rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .car-quiz-img img {
+        width: 215px;
+    }
+}
+

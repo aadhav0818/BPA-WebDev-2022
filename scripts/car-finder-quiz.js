@@ -248,7 +248,7 @@ function displayMatchedVehicles(indices) {
         document.querySelector('.car-results').style.margin = "1rem";
     }
     document.querySelector(".car-results-header").innerHTML += `
-        <div class="card car-finder-banner" style="margin: 1rem; margin-top: 1rem; background-color: #99b8c2;">
+        <div class="card car-finder-banner" style="margin: 1.75rem; margin-top: 3rem; background-color: #99b8c2;">
           <h5 class="card-header">Car Finder Matches</h5>
           <div class="card-body">
             <h5 class="card-title">Below are all the vehicles that match up with your preferences.</h5>
@@ -256,7 +256,7 @@ function displayMatchedVehicles(indices) {
             <a href="./inventory.html" class="btn btn-outline-dark btn-featured">Explore Inventory</a>
           </div>
       </div>
-        `
+      `
 }
 
 

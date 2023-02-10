@@ -91,4 +91,8 @@ input, select {
     .loan-estimator span {
         font-size: .7rem;
     }
+
+    .monthly-price {
+        font-size: 30px;
+    }
 }

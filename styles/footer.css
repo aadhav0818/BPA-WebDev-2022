@@ -77,6 +77,17 @@ ul li span {
 .social-media {
   margin-top: 1rem;
   text-align: center;
+  margin: auto;
+}
+
+.github-link {
+  text-align: center;
+}
+
+.github-link a {
+  position: absolute;
+  bottom: 0;
+  color: #bbb;
 }
 
 @media(max-width: 1000px){

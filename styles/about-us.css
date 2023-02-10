@@ -1,5 +1,6 @@
 body {
-  background-color: #99b8c2;
+  background-color: #353333;
+  color: white;
 }
 
 
@@ -172,7 +173,7 @@ body {
 
 .images-used{
   max-width: 100%;
-  
+
 }
 
 .team-item:hover .info{

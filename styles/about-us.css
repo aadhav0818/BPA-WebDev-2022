@@ -3,10 +3,6 @@ body {
 }
 
 
-
-
-
-
 .section_subtitle{
   margin-bottom: 7px;
   padding-left: 7px;
@@ -21,7 +17,8 @@ body {
 }
 
 .history_script{
-  margin-right: 400px;
+  font-size: 17px;
+  margin-right: 1rem;
 }
 
 
@@ -34,7 +31,6 @@ body {
 .used-car-img img {
   width: 575px;
   height: 300px;
-  margin-left: 300px;
   border-radius: 2%;
   margin-top: 110px;
 }
@@ -43,10 +39,10 @@ body {
 .mission-statement-img img {
   width: 575px;
   height: 300px;
-  margin-left: 300px;
   border-radius: 2%;
   margin-top: 110px;
-
+  margin-left: 2rem;
+  text-align: center;
 }
 
 .btn-color-background{

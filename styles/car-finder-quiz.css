@@ -1,0 +1,81 @@
+/* car quiz box css */
+body {
+    background-color: #99b8c2;
+}
+
+.car-quiz-box {
+    background-color: white;
+    width: 70%;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border-radius: 20px;
+}
+
+.prev-btn {
+    float: left;
+}
+
+.next-btn {
+    float: right;
+}
+
+.question-container {
+    text-align: center;
+    font-weight: 300;
+}
+
+.max-val {
+    float: right;
+}
+
+.question {
+    font-size: 1.5rem;
+}
+
+.entry-container {
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.entry {
+    text-align: center;
+}
+
+/* question 3 css */
+.body-styles {
+    text-align: center;
+    padding: 1rem;
+}
+
+.body-style img {
+    width: 80%;
+    border-radius: 4%;
+}
+
+.body-style button {
+    width: 80%;
+    margin: 1rem 0;
+    padding: 2%;
+    color: black;
+}
+
+.body-style:last-child {
+    margin: 0 auto;
+}
+
+.next-btn-container {
+    padding: auto;
+    margin-bottom: 2rem;
+}
+
+
+.prev-btn, .next-btn {
+    width: 30%;
+}
+
+.car-results {
+    margin: 1rem;
+}
+

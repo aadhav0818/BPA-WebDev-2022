@@ -4,12 +4,14 @@ var creditScore = document.getElementById("credit-score-drop-down").options[docu
 var loanTerm = parseInt(document.getElementById("loan-term-drop-down").options[document.getElementById("loan-term-drop-down").selectedIndex].text.substring(0, 2));
 
 
+
+
 for(var i = 0; i < inputVals.length; i++) {
     inputVals[i].addEventListener("keypress", function(event) {
         if(event.key === "Enter") { 
             event.preventDefault();
         }
-    })
+    });
 }
 
 function calculateMonthlyPayment() {
@@ -50,12 +52,29 @@ function getAPR(rating) {
 
 function updateFields(monthlyPay, price, downPay, tradeIn, otherFees, totalAmount, apr) {
     const commaFormatter = Intl.NumberFormat('en-US');
-    document.querySelector(".monthly-price").innerHTML = "$" + commaFormatter.format(monthlyPay);
-    document.querySelector(".vehicle-price").innerHTML = "$" + commaFormatter.format(price);
-    document.querySelector(".down-payment").innerHTML = "$" + commaFormatter.format(downPay);
-    document.querySelector(".trade-in").innerHTML = "$" + commaFormatter.format(tradeIn);
-    document.querySelector('.other-fees').innerHTML = "$" + commaFormatter.format(otherFees);
-    document.querySelector(".total-amount").innerHTML = "$" + commaFormatter.format(totalAmount);
-    document.querySelector(".est-monthly-payment").innerHTML = "$" + commaFormatter.format(monthlyPay);
+    document.querySelector(".monthly-price").innerHTML = "$" + formatPrice(monthlyPay);
+    document.querySelector(".vehicle-price").innerHTML = "$" + formatPrice(price);
+    document.querySelector(".down-payment").innerHTML = "$" + formatPrice(downPay);
+    document.querySelector(".trade-in").innerHTML = "$" + formatPrice(tradeIn);
+    document.querySelector('.other-fees').innerHTML = "$" + formatPrice(otherFees);
+    document.querySelector(".total-amount").innerHTML = "$" + formatPrice(totalAmount);
+    document.querySelector(".est-monthly-payment").innerHTML = "$" + formatPrice(monthlyPay);
     document.querySelector(".apr-value").innerHTML = "Estimated APR " + ((apr * 100).toFixed(2)) + "%";
 }
+
+function formatPrice(value) {
+    value = Intl.NumberFormat('en-US').format(value);
+    sepVals = String(value).split(".");
+    var newStr = "";
+    if(sepVals.length == 2) {
+        if(sepVals[1].length == 1) {
+            return value + "0";
+        } else {
+            return value;
+        }
+    } else {
+        return sepVals[0] + ".00";
+    }
+    return value;
+}
+

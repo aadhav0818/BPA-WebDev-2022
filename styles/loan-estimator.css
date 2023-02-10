@@ -16,7 +16,6 @@ input, select {
     float: right;
 }
 
-
 .entry-field {
     padding: .6rem 0rem;
     margin: .3rem .4rem;
@@ -30,6 +29,7 @@ input, select {
 .loan-estimator {
     justify-content: center;
 }
+
 
 .input-box {
     width: 50%;
@@ -47,10 +47,11 @@ input, select {
 .loan-estimator-input, .loan-estimator-results {
     border-radius: 2%;
     background-color: #fff;
-    padding: 1.9rem;
+    padding: 1.2rem;
     margin-top: 3rem;
-    margin-left: 1.5rem;
+    margin-left: 1.4rem;
     margin-bottom: 3rem;
+    width: 42%;
 }
 
 .monthly-payment {
@@ -74,4 +75,20 @@ input, select {
 .monthly-payment-row {
     margin: .8rem 0rem;
     width: 100%;
+}
+
+@media(max-width: 1200px) {
+    .loan-estimator-input, .loan-estimator-results {
+        width: 80%;
+    }
+}
+
+@media (max-width: 450px) {
+    .loan-estimator-input, .loan-estimator-results {
+        width: 90%;
+    }
+
+    .loan-estimator span {
+        font-size: .7rem;
+    }
 }

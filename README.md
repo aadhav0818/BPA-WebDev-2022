@@ -1,6 +1,9 @@
 # BPA-WebDev-2022
 ## Project Information
 #### Contributors: Kavin, Aadhav, Saisarath, Aditya
-#### Website: Hosted Using github.io
+#### Domain: vternalmotors.online
+#### Hosting: 
+### Previously: Github Pages
+### Currently: Hostinger Web Hosting Services
 #### Status: Public 
-#### Competition Stage: Texas State Leadership Conference 
+#### Competition Stage: National Leadership Conference

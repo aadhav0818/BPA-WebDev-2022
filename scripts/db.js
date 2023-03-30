@@ -1191,6 +1191,8 @@ let vehicle_data =
     }
 
 ]
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
 
 var admin = require("firebase-admin");
 

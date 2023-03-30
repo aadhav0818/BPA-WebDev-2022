@@ -4,6 +4,6 @@
 #### Domain: vternalmotors.online
 #### Hosting: 
 ### Previously: Github Pages
-### Currently: Hostinger Web Hosting Services
+### Currently: Hostinger Website Hosting Services
 #### Status: Private 
 #### Competition Stage: National Leadership Conference

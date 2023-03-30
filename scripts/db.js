@@ -1,5 +1,6 @@
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url);
+var admin = require("firebase-admin");
+var serviceAccount = require("../serviceAccountKeys.json");
+
 
 let vehicle_data = 
 [
@@ -1194,10 +1195,6 @@ let vehicle_data =
     }
 
 ]
-
-var admin = require("firebase-admin");
-
-var serviceAccount = require("../serviceAccountKeys.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),

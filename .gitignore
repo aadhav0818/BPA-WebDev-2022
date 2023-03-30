@@ -1,3 +1,9 @@
-#RESTRICTED INFORMATION
+#RESTRICTED 
 model-sketches/Saisarath/Saisarath_Representatives.png
 model-sketches/Saisarath/Saisarath_WhyUs.png
+
+#TOKENS
+serviceAccountKeys.json
+
+#EXCESSIVE DATA
+node_modules

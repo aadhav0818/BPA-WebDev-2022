@@ -1,3 +1,5 @@
+
+
 let vehicle_data = 
 [
     {
@@ -1256,6 +1258,7 @@ let checkedBoxes =
         _2022: false
     }
 ]
+
 
 function showCards()
 {

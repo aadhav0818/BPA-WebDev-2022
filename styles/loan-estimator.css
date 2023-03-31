@@ -57,7 +57,7 @@ input, select {
 .monthly-payment {
     text-align: center;
     background-color: #47748b;
-    border-radius: 4%;
+    border-radius: 40px;
 }
 
 .row-value {

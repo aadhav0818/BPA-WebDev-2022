@@ -1229,11 +1229,11 @@ module.exports = function (value) {
 };
 
 },{"is-function":6,"is-nil":7,"is-object":8,"is-symbol":9}],19:[function(require,module,exports){
-function populateDb()
-{
+document.getElementById("dbutton").addEventListener("click", function(event) {
     var randomCountry = require('random-country');
     alert(randomCountry({ full: true }));
-}
+})
+
 
 
 },{"random-country":14}]},{},[19]);

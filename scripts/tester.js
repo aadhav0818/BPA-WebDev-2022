@@ -1,13 +1,13 @@
-import { initializeApp, credential as _credential } from "firebase-admin";
+var admin = require("firebase-admin");
 
-import serviceAccount from "../serviceAccountKeys.json";
+var serviceAccount = require("../serviceAccountKeys.json");
 
-initializeApp({
-  credential: _credential.cert(serviceAccount)
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount)
 });
 
 document.getElementById("dbutton").addEventListener("click", function(event) {
-    alert("DB WORKING")
+    alert("DB WORKING!")
 })
 
 

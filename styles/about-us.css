@@ -145,13 +145,13 @@ body {
   left: 0;
   bottom: 0;
   opacity: 0;
-  transition: all .8s ease;
+  transition: all .8s;
 }
 
 .team-item:hover .images-used {
   background: rgba(0, 0, 0, .6);
   opacity: .5;
-  transition: all .8s ease;
+  transition: all .8s;
 }
 
 .team-item .info h5{

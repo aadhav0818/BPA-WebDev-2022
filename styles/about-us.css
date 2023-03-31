@@ -3,6 +3,9 @@ body {
   color: white;
 }
 
+.row {
+  margin: 0;
+}
 
 .section_subtitle{
   margin-bottom: 7px;
@@ -14,7 +17,6 @@ body {
   color: #716e6e;
   border-left: 3px solid #bfa67a;
   font-size: 700;
-
 }
 
 .history_script{

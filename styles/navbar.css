@@ -16,9 +16,7 @@
 }
 
 .main-navbar {
-    background-color: var(--dark);
-    color: var(--light);
-    z-index: 99;
+    animation: transitionIn .75s;
 }
 
 .main-navbar-logo {
@@ -48,5 +46,17 @@
 @media(max-width: 450px) {
     .main-navbar-brand {
         width: 70%;
+    }
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opactiy: 1;
+        transform: translateX(0);
     }
 }

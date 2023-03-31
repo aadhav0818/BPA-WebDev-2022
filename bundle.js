@@ -1229,10 +1229,9 @@ module.exports = function (value) {
 };
 
 },{"is-function":6,"is-nil":7,"is-object":8,"is-symbol":9}],19:[function(require,module,exports){
-var randomCountry = require('random-country');
-
 function populateDb()
 {
+    var randomCountry = require('random-country');
     alert(randomCountry({ full: true }));
 }
 

@@ -18,8 +18,8 @@
   "homepage": "https://github.com/aadhav0818/BPA-WebDev-2022#readme",
   "dependencies": {
     "browserify": "^17.0.0",
+    "fast-crc32c": "^2.0.0",
     "firebase": "^8.10.1",
-    "firebase-admin": "^7.4.0",
-    "random-country": "^1.0.1"
+    "firebase-admin": "^11.5.0"
   }
 }

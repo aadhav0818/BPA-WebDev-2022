@@ -1,9 +1,13 @@
-var randomCountry = require('random-country');
+import { initializeApp, credential as _credential } from "firebase-admin";
 
-let ct = randomCountry({ full: true });
-let ct2 = randomCountry({ full: true });
+import serviceAccount from "../serviceAccountKeys.json";
+
+initializeApp({
+  credential: _credential.cert(serviceAccount)
+});
+
 document.getElementById("dbutton").addEventListener("click", function(event) {
-    alert(ct + " " + ct2);
+    alert("DB WORKING")
 })
 
 

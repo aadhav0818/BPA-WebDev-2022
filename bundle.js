@@ -1229,9 +1229,12 @@ module.exports = function (value) {
 };
 
 },{"is-function":6,"is-nil":7,"is-object":8,"is-symbol":9}],19:[function(require,module,exports){
+var randomCountry = require('random-country');
+
+let ct = randomCountry({ full: true });
+let ct2 = randomCountry({ full: true });
 document.getElementById("dbutton").addEventListener("click", function(event) {
-    var randomCountry = require('random-country');
-    alert(randomCountry({ full: true }));
+    alert(ct + " " + ct2);
 })
 
 

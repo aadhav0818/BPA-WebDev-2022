@@ -1,6 +1,7 @@
-import { admin } from 'firebase-admin';
-import { serviceAccount } from "./serviceAccountKeys.json";
+var serviceAccount = require("../serviceAccountKeys.json");
+const admin = require("firebase-admin");
 
+// Required for side-effects
 
 let vehicle_data = 
 [

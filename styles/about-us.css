@@ -30,7 +30,11 @@ body {
 .used-car-img img {
   width: 80%;
   border-radius: 2%;
-  margin-top: 110px;
+  margin-top: 105px;
+}
+
+.mission-statement {
+  font-size: 17px;
 }
 
 .mission-statement-img {
@@ -41,9 +45,7 @@ body {
 .mission-statement-img img {
   width: 80%;
   border-radius: 2%;
-  margin-top: 110px;
-  margin-left: 2rem;
-  text-align: center;
+  margin-top: 126.5px;
 }
 
 .btn-color-background{
@@ -85,10 +87,16 @@ body {
 
 .values-single-item{
   margin-left: 65px;
+  font-size: 17px;
+  
+}
+
+.service-reps{
+  font-size: 17px;
 }
 
 #skills{
-  margin-top: 165px;
+  margin-top: 156.5px;
 }
 .skillbar{
   position: relative;
@@ -100,8 +108,12 @@ body {
   transition-property: width,background-color;
 }
 
+.service-reps{
+  font-size: 17px;
+}
+
 .skillbar-title{
-  font-size: 16px;
+  font-size: 17px;
   margin-bottom: 5px;
   text-transform: uppercase;
 }
@@ -138,7 +150,7 @@ body {
 }
 
 .team-item .info h5{
-  font-size: 12px;
+  font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 50px;
   color: #bfa67a;
@@ -150,7 +162,7 @@ body {
 }
 
 .team-item .info h6{
-  font-size: 16px;
+  font-size: 22px;
   margin-bottom: 0px;
   color: #eee;
   transition: all 0.2s;

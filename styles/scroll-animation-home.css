@@ -1,0 +1,31 @@
+.hidden
+{
+    opacity: 0;
+    transition: all 2s;
+    transform: translateY(-100px);
+
+}
+
+.show
+{
+    transform: translateY(0px);
+    opacity: 1;
+} 
+
+@media(prefers-reduced-motion)
+{
+    .hidden
+    {
+        transition: none;
+    }
+}
+
+.tile:nth-child(2)
+{
+    transition-delay: 0.5s;
+}
+
+.tile:nth-child(3)
+{
+    transition-delay: 0.7s;
+}

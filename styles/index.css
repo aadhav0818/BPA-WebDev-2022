@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500&display=swap');
 
 
+
+
 :root
 {
     --primary: #6B767B;
@@ -10,15 +12,19 @@
     --default_opacity: 0.9;
 }
 
+
 body
 {
     background: #353333;
 }
 
+
 .car-carousel {
     position: relative;
     opacity: .9;
 }
+
+
 
 
 .carousel-text {
@@ -29,11 +35,13 @@ body
     z-index: 99;
 }
 
+
 .header-text {
     display: inline-block;
     margin: 0 auto;
     padding: 3px;
 }
+
 
 .header-text h1 {
     color: var(--light);
@@ -49,29 +57,37 @@ body
 }
 
 
+
+
 .explore-btn button {
     font-size: 29px;
 }
 
+
 .row {
     margin: 0;
 }
+
 
 .carousel-text button {
     margin-top: 10px;
 }
 
 
+
+
 @keyframes typing {
     from { width: 0 }
     to { width: 100% }
 }
-  
+ 
 /* The typewriter cursor effect */
 @keyframes blink {
     from, to { border-color: transparent }
     50% { border-color: white; }
 }
+
+
 
 
 .service-title {
@@ -80,6 +96,7 @@ body
     align-items: center;
     margin-bottom: 16px;
 }
+
 
 hr {
     max-width: 400px;
@@ -90,6 +107,7 @@ hr {
     size: 8px;
 }
 
+
 .service-title h1 {
     text-align: center;
     font-size: 44px;
@@ -97,19 +115,23 @@ hr {
     color: white;
 }
 
+
 .service-section {
     display: flex;
     justify-content: space-evenly;
 }
 
+
 .tile {
     position: relative;
 }
+
 
 .tile:hover img {
     transform: scale(1.15);
     filter: brightness(50%);
 }
+
 
 .tile-img {
     display: flex;
@@ -120,11 +142,14 @@ hr {
 }
 
 
+
+
 .tile-img img {
     width: 100%;
     transition: 0.3s all ease-in-out;
     opacity: 70%;
 }
+
 
 .tile-text {
     margin-bottom: 0;
@@ -132,15 +157,18 @@ hr {
     color: white;
 }
 
+
 .tile-text p {
     margin-bottom: 5px;
     font-size: 25px;
     font-weight: 400;
 }
 
+
 .tile-btn button {
     font-size: 22px;
 }
+
 
 .tile-content {
     position: absolute;
@@ -152,11 +180,15 @@ hr {
 }
 
 
+
+
 .feat-vehicles-title {
     margin-top: 40px;
     text-align: center;
     color: white;
 }
+
+
 
 
 @media (max-width: 625px) {
@@ -165,7 +197,9 @@ hr {
     }
 }
 
+
 /* featured car section css */
+
 
 .feat-vehicles-title {
     font-weight: 350;
@@ -173,10 +207,12 @@ hr {
     margin: 0;
 }
 
+
 .car-card {
     justify-content: center;
     padding: 2% 20%;
 }
+
 
 .card-text-body {
     padding-left: 8%;
@@ -184,25 +220,31 @@ hr {
     color: white;
 }
 
+
 .card-img-body {
     text-align: right;
 }
+
 
 .card-img {
     border-radius: 8px;
 }
 
+
 .card-text-body h5 {
     font-size: 30px;
 }
+
 
 .card-text-body p {
     font-size: 22px;
 }
 
+
 .card-text-body button {
     font-size: 18px;
 }
+
 
 @media (max-width: 990px) {
     .card-text-body {
@@ -210,6 +252,8 @@ hr {
         text-align: center;
     }
 }
+
+
 
 
 .feat-nav-link {
@@ -220,22 +264,28 @@ hr {
 
 
 
+
+
+
 .feat-nav-link:hover {
     color: rgb(156, 156, 156);
 }
+
 
 .active-nav-link {
     border-bottom: 2px solid white;
 }
 
+
 @media (max-width: 1600px) {
-    .tile-text p { font-size: 16px; } 
+    .tile-text p { font-size: 16px; }
     .tile-btn button { font-size: 14px; };
     .card-text-body button { font-size: 14px; };
 }
 
+
 @media (max-width : 1200px)  {
-    .header-text h1 { font-size: 38px; } 
+    .header-text h1 { font-size: 38px; }
     .explore-btn button { font-size: 19px; }
     .service-tile h1 { font-size: 38px; }
     .feat-vehicles-title { font-size: 38px; }
@@ -246,8 +296,10 @@ hr {
 }
 
 
+
+
 @media (max-width: 878px) {
-    .header-text h1 { font-size: 22px; } 
+    .header-text h1 { font-size: 22px; }
     .explore-btn button { font-size: 16px; }
     .service-title h1 { font-size: 22px; }
     .feat-vehicles-title { font-size: 22px; }
@@ -258,6 +310,7 @@ hr {
     .card-text-body p { font-size: 16px; }
     .card-text-body button { font-size: 13px; };
 }
+
 
 @media (max-width: 450px) {
     .header-text h1 { font-size: 19px; }
@@ -272,6 +325,7 @@ hr {
     .card-text-body button { font-size: 13px; };
     .card-text-body button { font-size: 10px; };
 }
+
 
 @media (max-width: 768px) {
     .service-section {

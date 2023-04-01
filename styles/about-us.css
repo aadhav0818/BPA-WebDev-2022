@@ -110,9 +110,7 @@ body {
   transition-property: width,background-color;
 }
 
-.service-reps{
-  font-size: 17px;
-}
+
 
 .skillbar-title{
   font-size: 17px;
@@ -129,7 +127,6 @@ body {
 }
 
 .skill_area p{
-  text-align: justify;
   width: 90%;
 }
 

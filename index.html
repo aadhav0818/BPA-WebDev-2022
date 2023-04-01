@@ -14,291 +14,296 @@
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/navbar.css">
-    <link rel="stylesheet" href="./styles/page-header.css" />
+    <link rel="stylesheet" href="./styles/page-loader.css" />
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/page-header.css">
+    <script src = "./scripts/page-loader.js"></script>
     <script src="./scripts/chat.js"></script>
     <script src="./scripts/featured-vehicles.js" defer></script>
-
-
-
 
   </head>
  
   <body>
  
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark main-navbar">
-    <div class="container-fluid">
-     <a class="navbar-brand main-navbar-brand" href="./index.html">
-        <img
-        class="navbar-logo main-navbar-logo"
-        src="image-assets/logo-bold-no-padding.png"
-        alt="logo"/>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item main-nav-item active">
-          <a class="nav-link main-nav-link" href="./index.html">Home</a>
-        </li>
-        <li class="nav-item main-nav-item">
-          <a class="nav-link main-nav-link" href="./inventory.html">Inventory</a>
-        </li>
-        <li class="nav-item main-nav-item">
-          <a class="nav-link main-nav-link" href="./loan-estimator.html">Loan Estimator</a>
-        </li>
-        <li class="nav-item main-nav-item">
-          <a class="nav-link main-nav-link" href="./car-finder-home-page.html">Car Finder</a>
-        </li>
-        <li class="nav-item main-nav-item">
-          <a class="nav-link main-nav-link" href="./about-us.html">About Us</a>
-        </li>
-        <li class="nav-item main-nav-item">
-          <a class="nav-link main-nav-link" href="./contact-us.html">Contact Us</a>
+  
+  <div id="page-loader-body">
+    
+  </div>
+
+  <div id="homepage" style="display: none;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark main-navbar">
+      <div class="container-fluid">
+      <a class="navbar-brand main-navbar-brand" href="./index.html">
+          <img
+          class="navbar-logo main-navbar-logo"
+          src="image-assets/logo-bold-no-padding.png"
+          alt="logo"/>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item main-nav-item active">
+            <a class="nav-link main-nav-link" href="./index.html">Home</a>
           </li>
-       </ul>
-      </div>
-    </div>
-  </nav>
-
-
-    <div class="page-header-animation col-lg-12">
-        Welcome Home
-    </div>
-    <div class="carousel-text">
-      <div class="header-text">
-        <h1 id="header-slogan">Drive into the future with VTERNAL</h1>
-      </div>
-      <div class="explore-btn">
-        <button type="button" class="btn btn-outline-light" onclick="location.href='./inventory.html'" animation>Explore Inventory</button>
-      </div>
-    </div>
-   
-
-
-    <!-- carousel -->
-    <div class="car-carousel carousel slide" data-bs-ride="carousel" data-bs-pause="false">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="5000">
-          <img src="./image-assets/home-carousel-4runner.jpg" class="d-block w-100" alt="4runner">
-        </div>
-        <div class="carousel-item" data-bs-interval="5000">
-          <img src="./image-assets/home-carousel-accord.jpg" class="d-block w-100" alt="accord">
-        </div>
-        <div class="carousel-item" data-bs-interval="5000">
-          <img src="./image-assets/home-carousel-outback.jpg" class="d-block w-100" alt="outback">
-        </div>
-        <div class="carousel-item" data-bs-interval="5000">
-          <img src="./image-assets/home-carousel-silverado.jpg" class="d-block w-100" alt="silverado"/>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- services -->
-    <div class="service-title">
-      <hr>
-      <h1>Our Services</h1>
-    </div>
-    <div class="service-section">
-      <div class="tile">
-        <div class="tile-img">
-          <img src="./image-assets/person-and-salesperson.jpg" alt="">
-        </div>
-        <div class="tile-content">
-          <div class="tile-text">
-            <p>Instantly get your monthly payment estimate.</p>
-          </div>
-          <div class="tile-btn">
-            <button type="button" class="btn btn-outline-light" onclick="location.href='./loan-estimator.html'">Loan Estimator</button>
-          </div>
-        </div>
-      </div>
-      <div class="tile">
-        <div class="tile-img">
-          <img src="./image-assets/person-on-device.jpg" alt="">
-        </div>
-        <div class="tile-content">
-          <div class="tile-text">
-            <p>Find your dream ride using VTERNAL's Car Finder.</p>
-          </div>
-          <div class="tile-btn">
-            <button type="button" class="btn btn-outline-light" onclick="location.href='./car-finder-home-page.html'">Car Finder</button>
-          </div>
-        </div>
-      </div>
-      <div class="tile">
-        <div class="tile-img">
-          <img src="./image-assets/salesman.jpg" alt="">
-        </div>
-        <div class="tile-content">
-          <div class="tile-text">
-            <p>Learn about who we are.</p>
-          </div>
-          <div class="tile-btn">
-            <button type="button" class="btn btn-outline-light" onclick="location.href='./about-us.html'">About Us</button>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-
-
-      <div id=title class="feat-vehicles">
-        <hr>
-        <div>
-          <h1 class="feat-vehicles-title">Featured Vehicles</h1>
-        </div>
-        <ul class="feat-nav nav justify-content-center">
-          <li class="feat-nav-item nav-item">
-            <a class="feat-nav-link nav-link active-nav-link car" href="#title" onclick="switchCars()">Cars</a>
+          <li class="nav-item main-nav-item">
+            <a class="nav-link main-nav-link" href="./inventory.html">Inventory</a>
           </li>
-          <li class="feat-nav-item nav-item">
-            <a class="feat-nav-link nav-link truck" href="#title" onclick="switchTrucks()">Trucks</a>
+          <li class="nav-item main-nav-item">
+            <a class="nav-link main-nav-link" href="./loan-estimator.html">Loan Estimator</a>
           </li>
-          <li class="feat-nav-item nav-item">
-            <a class="feat-nav-link nav-link suv" href="#title" onclick="switchSUVs()">SUVs</a>
+          <li class="nav-item main-nav-item">
+            <a class="nav-link main-nav-link" href="./car-finder-home-page.html">Car Finder</a>
           </li>
+          <li class="nav-item main-nav-item">
+            <a class="nav-link main-nav-link" href="./about-us.html">About Us</a>
+          </li>
+          <li class="nav-item main-nav-item">
+            <a class="nav-link main-nav-link" href="./contact-us.html">Contact Us</a>
+            </li>
         </ul>
+        </div>
+      </div>
+    </nav>
 
 
-      <div id="feat-vehicles-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="page-header-animation col-lg-12">
+          Welcome Home
+      </div>
+      <div class="carousel-text">
+        <div class="header-text">
+          <h1 id="header-slogan">Drive into the future with VTERNAL</h1>
+        </div>
+        <div class="explore-btn">
+          <button type="button" class="btn btn-outline-light" onclick="location.href='./inventory.html'" animation>Explore Inventory</button>
+        </div>
+      </div>
+    
+
+
+      <!-- carousel -->
+      <div class="car-carousel carousel slide" data-bs-ride="carousel" data-bs-pause="false">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="car-card row">
-              <div class="card-img-body col-lg-6 col-sm-12">
-                <img class="card-img" src="./vehicle-images/2020-Yellow-Toyota-Supra.jpg" alt="Card image cap">
-              </div>
-              <div class="card-text-body col-lg-5 col-sm-12">
-                <h5 class="car-card-vehicle-name">Toyota Supra</h5>
-                <p class="car-card-cta">Power up your drive with the Supra.</p>
-                <button type="button" class="btn btn-outline-light" onclick="location.href='./inventory.html'">Explore Inventory</button>
-              </div>
-            </div>
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="./image-assets/home-carousel-4runner.jpg" class="d-block w-100" alt="4runner">
           </div>
-          <div class="carousel-item">
-            <div class="car-card row">
-              <div class="card-img-body col-lg-6 col-sm-12">
-                <img class="card-img" src="./vehicle-images/2021-White-Acura-ILX-A-Spec.jpg" alt="Card image cap">
-              </div>
-              <div class="card-text-body col-lg-5 col-sm-12">
-                <h5 class="car-card-vehicle-name">Acura ILX</h5>
-                <p class="car-card-cta">Look sharp at every turn.</p>
-                <button type="button" class="btn btn-outline-light" onclick="location.href='./inventory.html'">Explore Inventory</button>
-              </div>
-            </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="./image-assets/home-carousel-accord.jpg" class="d-block w-100" alt="accord">
           </div>
-          <div class="carousel-item">
-            <div class="car-card row">
-              <div class="card-img-body col-lg-6 col-sm-12">
-                <img class="card-img" src="./vehicle-images/2018-Blue-Chevrolet-Camaro-ZL1.jpg" alt="Card image cap">
-              </div>
-              <div class="card-text-body col-lg-6 col-sm-12">
-                <h5 class="car-card-vehicle-name">Chevrolet Camaro</h5>
-                <p class="car-card-cta">Go above and beyond the ordinary.</p>
-                <button type="button" class="btn btn-outline-light" onclick="location.href='./inventory.html'">Explore Inventory</button>
-              </div>
-            </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="./image-assets/home-carousel-outback.jpg" class="d-block w-100" alt="outback">
           </div>
-          <div class="carousel-item">
-            <div class="car-card row">
-              <div class="card-img-body col-lg-6 col-sm-12">
-                <img class="card-img" src="./vehicle-images/2020-Black-Mercedes-CLA-250.jpg" alt="Card image cap">
-              </div>
-              <div class="card-text-body col-lg-6 col-sm-12">
-                <h5 class="car-card-vehicle-name">Mercedes-Benz CLA-250</h5>
-                <p class="car-card-cta">Luxurious. Fast. Comfortable.</p>
-                <button type="button" class="btn btn-outline-light" onclick="location.href='./inventory.html'">Explore Inventory</button>
-              </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="./image-assets/home-carousel-silverado.jpg" class="d-block w-100" alt="silverado"/>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- services -->
+      <div class="service-title">
+        <hr>
+        <h1>Our Services</h1>
+      </div>
+      <div class="service-section">
+        <div class="tile">
+          <div class="tile-img">
+            <img src="./image-assets/person-and-salesperson.jpg" alt="">
+          </div>
+          <div class="tile-content">
+            <div class="tile-text">
+              <p>Instantly get your monthly payment estimate.</p>
+            </div>
+            <div class="tile-btn">
+              <button type="button" class="btn btn-outline-light" onclick="location.href='./loan-estimator.html'">Loan Estimator</button>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#feat-vehicles-carousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#feat-vehicles-carousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="tile">
+          <div class="tile-img">
+            <img src="./image-assets/person-on-device.jpg" alt="">
+          </div>
+          <div class="tile-content">
+            <div class="tile-text">
+              <p>Find your dream ride using VTERNAL's Car Finder.</p>
+            </div>
+            <div class="tile-btn">
+              <button type="button" class="btn btn-outline-light" onclick="location.href='./car-finder-home-page.html'">Car Finder</button>
+            </div>
+          </div>
+        </div>
+        <div class="tile">
+          <div class="tile-img">
+            <img src="./image-assets/salesman.jpg" alt="">
+          </div>
+          <div class="tile-content">
+            <div class="tile-text">
+              <p>Learn about who we are.</p>
+            </div>
+            <div class="tile-btn">
+              <button type="button" class="btn btn-outline-light" onclick="location.href='./about-us.html'">About Us</button>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+        <div id=title class="feat-vehicles">
+          <hr>
+          <div>
+            <h1 class="feat-vehicles-title">Featured Vehicles</h1>
+          </div>
+          <ul class="feat-nav nav justify-content-center">
+            <li class="feat-nav-item nav-item">
+              <a class="feat-nav-link nav-link active-nav-link car" href="#title" onclick="switchCars()">Cars</a>
+            </li>
+            <li class="feat-nav-item nav-item">
+              <a class="feat-nav-link nav-link truck" href="#title" onclick="switchTrucks()">Trucks</a>
+            </li>
+            <li class="feat-nav-item nav-item">
+              <a class="feat-nav-link nav-link suv" href="#title" onclick="switchSUVs()">SUVs</a>
+            </li>
+          </ul>
+
+
+        <div id="feat-vehicles-carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="car-card row">
+                <div class="card-img-body col-lg-6 col-sm-12">
+                  <img class="card-img" src="./vehicle-images/2020-Yellow-Toyota-Supra.jpg" alt="Card image cap">
+                </div>
+                <div class="card-text-body col-lg-5 col-sm-12">
+                  <h5 class="car-card-vehicle-name">Toyota Supra</h5>
+                  <p class="car-card-cta">Power up your drive with the Supra.</p>
+                  <button type="button" class="btn btn-outline-light" onclick="location.href='./inventory.html'">Explore Inventory</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="car-card row">
+                <div class="card-img-body col-lg-6 col-sm-12">
+                  <img class="card-img" src="./vehicle-images/2021-White-Acura-ILX-A-Spec.jpg" alt="Card image cap">
+                </div>
+                <div class="card-text-body col-lg-5 col-sm-12">
+                  <h5 class="car-card-vehicle-name">Acura ILX</h5>
+                  <p class="car-card-cta">Look sharp at every turn.</p>
+                  <button type="button" class="btn btn-outline-light" onclick="location.href='./inventory.html'">Explore Inventory</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="car-card row">
+                <div class="card-img-body col-lg-6 col-sm-12">
+                  <img class="card-img" src="./vehicle-images/2018-Blue-Chevrolet-Camaro-ZL1.jpg" alt="Card image cap">
+                </div>
+                <div class="card-text-body col-lg-6 col-sm-12">
+                  <h5 class="car-card-vehicle-name">Chevrolet Camaro</h5>
+                  <p class="car-card-cta">Go above and beyond the ordinary.</p>
+                  <button type="button" class="btn btn-outline-light" onclick="location.href='./inventory.html'">Explore Inventory</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="car-card row">
+                <div class="card-img-body col-lg-6 col-sm-12">
+                  <img class="card-img" src="./vehicle-images/2020-Black-Mercedes-CLA-250.jpg" alt="Card image cap">
+                </div>
+                <div class="card-text-body col-lg-6 col-sm-12">
+                  <h5 class="car-card-vehicle-name">Mercedes-Benz CLA-250</h5>
+                  <p class="car-card-cta">Luxurious. Fast. Comfortable.</p>
+                  <button type="button" class="btn btn-outline-light" onclick="location.href='./inventory.html'">Explore Inventory</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#feat-vehicles-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#feat-vehicles-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+
+      <!-- <a href="./db.html">Loan Estimator</a> -->
+    
+      <script>
+        setTimeout(removeBlinker, 3300);
+        function removeBlinker() {
+            document.getElementById("header-slogan").style.border = "transparent";
+        }
+      </script>
+
+
+      <script src="./scripts/feat-vehicles.js"></script>
+    
+      <!--footer-->
+    
+      <footer class="footer" >
+        <div class="footer-container">
+          <div class="footer-row row">
+            <div class="footer-col">
+              <h4>Services</h4>
+              <ul class="footer-elements">
+                <li>
+                  <a href="./inventory.html">Inventory</a>
+                  <a href="./car-finder-home-page.html">Car Finder</a>
+                  <a href="./loan-estimator.html">Loan Estimator</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>About VTERNAL</h4>
+              <ul class="footer-elements">
+                <li>
+                  <a href="./about-us.html">About Us</a>
+                  <a href="./contact-us.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Get in Touch</h4>
+              <ul class="footer-elements">
+                <li>
+                  <a href="https://goo.gl/maps/VcUL1Fa8EFkYKixc8" target="_blank"> <i class="fa-solid fa-location-pin"></i> 3003 Stonebrook Pkwy</a>
+                  <a href="tel:4695927140"><i class="fa-solid fa-phone"></i> +1 (469) 592-7140</a>
+                  <a href="mailto:vternalmotors@gmail.com"><i class="fa-solid fa-envelope"></i> vternalmotors@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Dealership Hours</h4>
+              <ul class="footer-elements">
+                <li>
+                  <span>
+                    Mon - Fri: 7:30 AM - 7:00 PM <br>
+                    Sat - Sun: 9:00 AM - 6:00 PM
+                  </span>
+                </li>
+              </ul>
+            </div>
+          
+            <div class="container social-media">
+              <a href="https://www.instagram.com/vternalmotors/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://twitter.com/VternalMotors" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://github.com/aadhav0818/BPA-WebDev-2022"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+
+            <div class="container github-link">
+            
+            </div>
+        </div>
       </div>
     </div>
-
-
-    <!-- <a href="./db.html">Loan Estimator</a> -->
-   
-    <script>
-      setTimeout(removeBlinker, 3300);
-      function removeBlinker() {
-          document.getElementById("header-slogan").style.border = "transparent";
-      }
-    </script>
-
-
-    <script src="./scripts/feat-vehicles.js"></script>
-   
-    <!--footer-->
-   
-    <footer class="footer" >
-      <div class="footer-container">
-        <div class="footer-row row">
-          <div class="footer-col">
-            <h4>Services</h4>
-            <ul class="footer-elements">
-              <li>
-                <a href="./inventory.html">Inventory</a>
-                <a href="./car-finder-home-page.html">Car Finder</a>
-                <a href="./loan-estimator.html">Loan Estimator</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>About VTERNAL</h4>
-            <ul class="footer-elements">
-              <li>
-                <a href="./about-us.html">About Us</a>
-                <a href="./contact-us.html">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Get in Touch</h4>
-            <ul class="footer-elements">
-              <li>
-                <a href="https://goo.gl/maps/VcUL1Fa8EFkYKixc8" target="_blank"> <i class="fa-solid fa-location-pin"></i> 3003 Stonebrook Pkwy</a>
-                <a href="tel:4695927140"><i class="fa-solid fa-phone"></i> +1 (469) 592-7140</a>
-                <a href="mailto:vternalmotors@gmail.com"><i class="fa-solid fa-envelope"></i> vternalmotors@gmail.com</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Dealership Hours</h4>
-            <ul class="footer-elements">
-              <li>
-                <span>
-                  Mon - Fri: 7:30 AM - 7:00 PM <br>
-                  Sat - Sun: 9:00 AM - 6:00 PM
-                </span>
-              </li>
-            </ul>
-          </div>
-         
-          <div class="container social-media">
-            <a href="https://www.instagram.com/vternalmotors/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://twitter.com/VternalMotors" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://github.com/aadhav0818/BPA-WebDev-2022"><i class="fa-brands fa-github"></i></a>
-          </div>
-
-
-          <div class="container github-link">
-           
-          </div>
-      </div>
-    </div>
-
 
   </footer>
 

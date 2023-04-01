@@ -53,14 +53,14 @@ body
     white-space: nowrap;
     margin: 0 auto;
     animation: typing 3.25s steps(35), blink .30s step-end infinite alternate;
-    font-size: 58px;
+    font-size: 45px;
 }
 
 
 
 
 .explore-btn button {
-    font-size: 29px;
+    font-size: 20px;
 }
 
 
@@ -166,7 +166,7 @@ hr {
 
 
 .tile-btn button {
-    font-size: 22px;
+    font-size: 19px;
 }
 
 

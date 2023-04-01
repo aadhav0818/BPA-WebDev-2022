@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/page-header.css" />
     <script src="./scripts/chat.js"></script>
+    <link rel="stylesheet" href="./styles/scroll-animation-general.css">
+    <script src="./scripts/scroll-animation.js" defer></script>
 
 </head>
 
@@ -67,7 +69,6 @@
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
-        
             <ul class="list-unstyled components">
                 <li class="filter">
                     <a href="#brandSubmenu" data-bs-toggle="collapse" aria-expanded="false">
@@ -77,6 +78,12 @@
                         </svg>
                     </a>
                     <ul class="collapse list-unstyled" id="brandSubmenu">
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="opacity: 0%; height: 1px; width: 1px;">
+
+                            </div>
+                        </li>
                         <li>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(1, 'brand', 'Acura')">
@@ -157,6 +164,11 @@
                                 </label>
                             </div>
                         </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="opacity: 0%; height: 1px; width: 1px;">
+                            </div>
+                        </li>
                     </ul>
                 </li>
                 <li class="filter">
@@ -167,6 +179,11 @@
                         </svg>
                     </a>
                     <ul class="collapse list-unstyled" id="priceSubmenu">
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="opacity: 0%; height: 1px; width: 1px;">
+                            </div>
+                        </li>
                         <li>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(2, 'price', '_lt10k')">
@@ -215,6 +232,11 @@
                                 </label>
                             </div>
                         </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="opacity: 0%; height: 1px; width: 1px;">
+                            </div>
+                        </li>
                     </ul>
                 </li>
                 <li class="filter">
@@ -225,6 +247,11 @@
                         </svg>
                     </a>
                     <ul class="collapse list-unstyled" id="carTypeSubmenu">
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="opacity: 0%; height: 1px; width: 1px;">
+                            </div>
+                        </li>
                         <li>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(3, 'type', 'SUV')">
@@ -265,6 +292,11 @@
                                 </label>
                             </div>
                         </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="opacity: 0%; height: 1px; width: 1px;">
+                            </div>
+                        </li>
                     </ul>
                 </li>
                 <li class="filter">
@@ -275,6 +307,11 @@
                         </svg>
                     </a>
                     <ul class="collapse list-unstyled" id="colorSubmenu">
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="opacity: 0%; height: 1px; width: 1px;">
+                            </div>
+                        </li>
                         <li>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"  onclick="rebuildCards(4, 'color', 'Black')">
@@ -371,6 +408,11 @@
                                 </label>
                             </div>
                         </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="opacity: 0%; height: 1px; width: 1px;">
+                            </div>
+                        </li>
                     </ul>
                 </li>
                 <li class="filter">
@@ -381,6 +423,11 @@
                         </svg>
                     </a>
                     <ul class="collapse list-unstyled" id="yearSubmenu">
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="opacity: 0%; height: 1px; width: 1px;">
+                            </div>
+                        </li>
                         <li>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onclick="rebuildCards(5, 'year', '_2010')">
@@ -485,6 +532,11 @@
                                 </label>
                             </div>
                         </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="opacity: 0%; height: 1px; width: 1px;">
+                            </div>
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -496,27 +548,28 @@
 
             <nav class="navbar inventory-navbar navbar-expand-lg navbar-light bg-dark">
                 <div class="container-fluid">
-
-                    <button type="button" id="sidebarCollapse" class="btn btn-outline-info">
-                        <i class="fas fa-align-left"></i>
-                        <span>Show Filters</span>
-                    </button>     
+                    <div class="hidden secondary-nav-btn">
+                        <button type="button" id="sidebarCollapse" class="btn btn-outline-info">
+                            <i class="fas fa-align-left"></i>
+                            <span>Show Filters</span>
+                        </button>     
+                    </div>
                     
-                    <div style="padding-left:1%">
+                    <div style="padding-left:1%" class="hidden secondary-nav-btn">
                         <button type="button" id="sidebarCollapse" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#HelpModalCenter">
                             <i class="fas fa-question-circle"></i>
                             <span>Help</span>
                         </button>    
                     </div>
 
-                    <div style="padding-left:1%">
+                    <div style="padding-left:1%" class="hidden secondary-nav-btn">
                         <button type="button" id="sidebarCollapse" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#LoanModalCenter">
                             <i class="fas fa-money-check-alt"></i>
                             <span>Loan Estimator</span>
                         </button>    
                     </div>
                     
-                    <div style="padding-left:1%">
+                    <div style="padding-left:1%" class="hidden secondary-nav-btn">
                         <button type="button" id="sidebarCollapse" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#IssuesModalCenter">
                             <i class="fa-solid fa-circle-info"></i>
                             <span>More Info</span>

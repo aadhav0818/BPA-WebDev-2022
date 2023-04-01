@@ -39,12 +39,13 @@ body
     color: var(--light);
     font-family: 'Inter Tight';
     letter-spacing: .1rem;
-    overflow: hidden; 
+    overflow: hidden;
+    font-weight: 400; 
     border-right: .1em solid white; 
     white-space: nowrap; 
     margin: 0 auto; 
     animation: typing 3.25s steps(35), blink .30s step-end infinite alternate;
-    font-size: 3vw;
+    font-size: 2.4vw;
 }
 
 .row {
@@ -170,8 +171,9 @@ hr {
 
 
 .tile-img img {
-    width: 96%;
+    width: 100%;
     transition: 0.3s all ease-in-out;
+    opacity: 70%;
 }
 
 .tile-text {
@@ -181,13 +183,13 @@ hr {
 }
 
 .tile-text p {
-    margin-bottom: 1px;
-    font-size: 1.25vw;
-    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 1.15vw;
+    font-weight: 400;
 }
 
 .tile-btn button {
-    font-size: 1.25vw;
+    font-size: 1vw;
 }
 
 .tile-content {

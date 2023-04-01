@@ -40,12 +40,17 @@ body
     font-family: 'Inter Tight';
     letter-spacing: .1rem;
     overflow: hidden;
-    font-weight: 400; 
-    border-right: .1em solid white; 
-    white-space: nowrap; 
-    margin: 0 auto; 
+    font-weight: 400;
+    border-right: .1em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
     animation: typing 3.25s steps(35), blink .30s step-end infinite alternate;
-    font-size: 2.4vw;
+    font-size: 58px;
+}
+
+
+.explore-btn button {
+    font-size: 29px;
 }
 
 .row {
@@ -68,61 +73,6 @@ body
     50% { border-color: white; }
 }
 
-@media (max-width : 998px) {
-    /* .carousel-text h1 {
-        font-size: 1.8rem;
-    } */
-
-    .carousel-text button {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width : 668px) {
-    /* .carousel-text h1 {
-        font-size: 1.2rem;
-    } */
-
-    .carousel-text button {
-        font-size: .8rem;
-    }
-} 
-
-/* .service-section {
-    justify-content: center;
-    background-color: #373636;
-    margin-right: 0;
-}
-
-.service-tile {
-    margin: 4rem 1.5rem;
-    text-align: center;
-}
-
-
-.tile-img img {
-    max-width: 256px;
-    border-radius: 5%;
-}
-
-.tile-text {
-    font-size: .9rem;
-    padding: 0 .3rem 0 0;
-    margin-top: 2rem;
-    font-weight: 500;
-    color: #fff;
-}
-
-.tile-text button {
-    font-size: .8rem;
-}
-
-.tile-btn {
-    margin-top: 1rem;
-    
-} */
-
-
 
 .service-title {
     width: 100%;
@@ -132,7 +82,7 @@ body
 }
 
 hr {
-    width: 400px;
+    max-width: 400px;
     margin: 0 auto;
     margin-top: 25px;
     margin-bottom: 10px;
@@ -142,7 +92,7 @@ hr {
 
 .service-title h1 {
     text-align: center;
-    font-size: 35px;
+    font-size: 44px;
     font-weight: 350;
     color: white;
 }
@@ -183,13 +133,13 @@ hr {
 }
 
 .tile-text p {
-    margin-bottom: 15px;
-    font-size: 1.15vw;
+    margin-bottom: 5px;
+    font-size: 25px;
     font-weight: 400;
 }
 
 .tile-btn button {
-    font-size: 1vw;
+    font-size: 22px;
 }
 
 .tile-content {
@@ -200,6 +150,7 @@ hr {
     left: 50%;
     transform: translateX(-50%);
 }
+
 
 .feat-vehicles-title {
     margin-top: 40px;
@@ -218,7 +169,7 @@ hr {
 
 .feat-vehicles-title {
     font-weight: 350;
-    font-size: 35px;
+    font-size: 44px;
     margin: 0;
 }
 
@@ -238,10 +189,22 @@ hr {
 }
 
 .card-img {
-    border-radius: 3%;
+    border-radius: 8px;
 }
 
-@media (max-width: 878px) {
+.card-text-body h5 {
+    font-size: 30px;
+}
+
+.card-text-body p {
+    font-size: 22px;
+}
+
+.card-text-body button {
+    font-size: 18px;
+}
+
+@media (max-width: 990px) {
     .card-text-body {
         margin-top: 1rem;
         text-align: center;
@@ -252,7 +215,10 @@ hr {
 .feat-nav-link {
     color: white;
     border-bottom: 2px solid rgb(156, 156, 156);
+    font-size: 24px;
 }
+
+
 
 .feat-nav-link:hover {
     color: rgb(156, 156, 156);
@@ -260,4 +226,56 @@ hr {
 
 .active-nav-link {
     border-bottom: 2px solid white;
+}
+
+@media (max-width: 1600px) {
+    .tile-text p { font-size: 16px; } 
+    .tile-btn button { font-size: 14px; };
+    .card-text-body button { font-size: 14px; };
+}
+
+@media (max-width : 1200px)  {
+    .header-text h1 { font-size: 38px; } 
+    .explore-btn button { font-size: 19px; }
+    .service-tile h1 { font-size: 38px; }
+    .feat-vehicles-title { font-size: 38px; }
+    .feat-nav-item a { font-size: 22px; }
+    .card-text-body h5 { font-size: 19px; }
+    .card-text-body p { font-size: 15px; }
+    .card-text-body button { font-size: 13px; };
+}
+
+
+@media (max-width: 878px) {
+    .header-text h1 { font-size: 22px; } 
+    .explore-btn button { font-size: 16px; }
+    .service-title h1 { font-size: 22px; }
+    .feat-vehicles-title { font-size: 22px; }
+    .feat-nav-item a { font-size: 12px; }
+    .tile-text p { font-size: 16px; }
+    .tile-btn button { font-size: 11px; }
+    .card-text-body h5 { font-size: 20px; }
+    .card-text-body p { font-size: 16px; }
+    .card-text-body button { font-size: 13px; };
+}
+
+@media (max-width: 450px) {
+    .header-text h1 { font-size: 19px; }
+    .explore-btn button { font-size: 8px; }
+    .service-title h1 { font-size: 19px; }
+    .feat-vehicles-title { font-size: 19px; }
+    .feat-nav-item a { font-size: 10px; }
+    .tile-text p { font-size: 12px; }
+    .tile-btn button { font-size: 9px; }
+    .card-text-body h5 { font-size: 16px; }
+    .card-text-body p { font-size: 12px; }
+    .card-text-body button { font-size: 13px; };
+    .card-text-body button { font-size: 10px; };
+}
+
+@media (max-width: 768px) {
+    .service-section {
+        display: block;
+        margin: 12px 0;
+    }
 }

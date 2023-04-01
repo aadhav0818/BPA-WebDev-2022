@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VTERNAL</title>
+    <link rel="Shortcut Icon" type="image/png" href="image-assets/favicon.png">
 
     <!-- Bootstrap CSS CDN -->
     <link
@@ -27,6 +28,10 @@
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/page-header.css" />
+
+    <link rel="stylesheet" href="./styles/scroll-animation-general.css">
+    <script defer src="./scripts/scroll-animation.js"></script>
+    
     </head>
     <body>
       <!-- navbar -->
@@ -73,7 +78,7 @@
     </div>
 
     <div class="row container-fluid loan-estimator">
-      <div class="loan-estimator-input col-lg-5 col-md-9 col-sm-8">
+      <div class="loan-estimator-input hidden col-lg-5 col-md-9 col-sm-8">
         <h1>Monthly Payment Calculator</h1>
         <span class="loan-estimator-desc"
           >Use our loan calculator to find your estimated monthly payment for
@@ -149,7 +154,7 @@
         </button>
       </div>
 
-      <div class="loan-estimator-results col-lg-5 col-md-9 col-sm-8">
+      <div class="loan-estimator-results hidden col-lg-5 col-md-9 col-sm-8">
         <div class="monthly-payment-header">
           <h1 class="results-header">Estimated Monthly Payment</h1>
           <div class="monthly-payment">

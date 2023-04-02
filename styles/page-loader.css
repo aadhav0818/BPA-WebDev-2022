@@ -2,7 +2,6 @@ body
 {
     background: #222121;
     z-index: 1000;
-    display: flex;
     justify-content: center;
     align-items: center;
     
@@ -59,12 +58,12 @@ body
 
 .rotator:after
 {
-    content: "LOADING";
+    content: "";
     position: fixed;
     width: 64px;
     height: 64px;
     border-radius: 50%;
-    border: 6px solid #fff;
+    border: 4px solid #fff;
     border-color: #fff transparent #fff transparent;
     animation: loader-rotation 1.2s linear infinite;
 }

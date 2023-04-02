@@ -23,7 +23,7 @@ else
     if(window.screen.width <= 450)
     {
         let image = document.getElementById("loaderimage")
-        image.src = "../image-assets/logo-no-padding.png";
+        image.src = "../image-assets/logo-bold-no-padding.png";
     }
     else
     {

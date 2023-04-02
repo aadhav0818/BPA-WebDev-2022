@@ -51,7 +51,7 @@ body
     }
   }
 
-/* .rotatercapsule
+.rotatercapsule
 {
     position: absolute;
     clear: both;
@@ -69,7 +69,7 @@ body
     border: 2px solid #fff;
     border-color: #ffffff transparent #fff transparent;
     animation: loader-rotation 1.2s linear infinite;
-} */
+}
 
 
 

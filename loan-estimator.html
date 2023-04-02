@@ -87,9 +87,11 @@
         <div class="entry-field">
           <span id="price-text">Vehicle Price</span>
           <input
-            type="text"
+            type="number"
             id="input-price"
             class="input-box input-field"
+            min="0"
+            step="1000"
             value="25000"
             max="150000"
             title="Value must be a number from $0 to $150,000"
@@ -137,11 +139,11 @@
         <div class="entry-field">
           <span id="loan-term-text">Loan Term</span>
           <select class="input-box select-field" id="loan-term-drop-down">
-            <option value="72-months">72 Months</option>
-            <option value="60-months">60 Months</option>
-            <option value="48-months">48 Months</option>
-            <option value="36-months">36 Months</option>
-            <option value="24-months">24 Months</option>
+            <option value="72-months" class="op-value">72 Months</option>
+            <option value="60-months" class="op-value">60 Months</option>
+            <option value="48-months" class="op-value">48 Months</option>
+            <option value="36-months" class="op-value">36 Months</option>
+            <option value="24-months" class="op-value">24 Months</option>
           </select>
         </div>
 
@@ -161,6 +163,12 @@
             <span class="monthly-price">$0.00</span>
             <span class="month-subscript">/mo</span><br />
             <span class="apr-value">Estimated APR 0.00%</span>
+            <div class="modal-container">
+              <button class="modal-btn"><i class="fa-solid fa-circle-info"></i></button>
+              <div class="modal-content">
+                <p>The displayed value is estimated based on your credit score and average Texas auto loan interest rates.</p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="monthly-payment-factors">

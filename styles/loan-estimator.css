@@ -11,6 +11,9 @@ span {
     font-size: 1rem;
 }
 
+.row {
+    margin-right: 0;
+}
 
 input, select {
     float: right;
@@ -45,19 +48,22 @@ input, select {
 
 
 .loan-estimator-input, .loan-estimator-results {
-    border-radius: 2%;
+    border-radius: 10px;
     background-color: #fff;
-    padding: 1.2rem;
-    margin-top: 3rem;
-    margin-left: 1.4rem;
-    margin-bottom: 3rem;
+    padding: 19px;
+    margin-top: 30px;
+    margin-left: 1.5rem;
     width: 42%;
+}
+
+.loan-estimator {
+    margin-bottom: 15px;
 }
 
 .monthly-payment {
     text-align: center;
     background-color: #47748b;
-    border-radius: 40px;
+    border-radius: 10px;
 }
 
 .row-value {
@@ -65,11 +71,11 @@ input, select {
 }
 
 .monthly-price {
-    font-size: 4rem;
+    font-size: 60px;
 }
 
 .month-subscript {
-    font-size: 1.2rem;
+    font-size: 19px;
 }
 
 .monthly-payment-row {
@@ -79,20 +85,49 @@ input, select {
 
 @media(max-width: 1200px) {
     .loan-estimator-input, .loan-estimator-results {
-        width: 80%;
+        width: 90%;
     }
 }
 
 @media (max-width: 450px) {
     .loan-estimator-input, .loan-estimator-results {
-        width: 90%;
+        width: 99%;
     }
 
-    .loan-estimator span {
-        font-size: .7rem;
+    span {
+        font-size: 15px;
     }
 
-    .monthly-price {
-        font-size: 30px;
+
+    .monthly-price .monthly-price {
+        font-size: 24px;
     }
+}
+
+.modal-container {
+    position: relative;
+    display: inline-block;
+}
+  
+.modal-content {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 100px;
+    padding: 5px;
+    font-size: 12px;
+    z-index: 1;
+}
+
+.modal-container button {
+    background: none;
+    border: none;
+}
+  
+.modal-btn:hover + .modal-content {
+    display: block;
 }

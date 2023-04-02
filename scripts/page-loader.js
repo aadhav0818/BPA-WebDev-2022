@@ -1,6 +1,6 @@
 if(sessionStorage.getItem("visited") != null)
 {
-    const element = document.getElementById("loaderimage");
+    const element = document.getElementById("page-loader-body");
     element.remove();
 }
 

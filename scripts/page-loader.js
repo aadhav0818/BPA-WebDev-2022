@@ -26,6 +26,8 @@ else
         }
     };
 
+    console.log("HI")
+
     setTimeout(() => {
         const ploader = document.getElementById("page-loader-body");
         ploader.remove();

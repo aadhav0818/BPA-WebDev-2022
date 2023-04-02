@@ -1,9 +1,9 @@
 if(sessionStorage.getItem("deleteLoader") != null)
 {
+    console.log("NUL")
     const element = document.getElementById("page-loader-body");
-    element.remove();
+    element.remove(); 
 }
-
 
 
 if(sessionStorage.getItem("visited") != null)

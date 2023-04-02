@@ -20,6 +20,12 @@ if(sessionStorage.getItem("visited") != null)
 }
 else
 {
+    if(window.screen.width <= 450)
+    {
+        let image = document.getElementById("loaderimage")
+        image.src = "../image-assets/logo-no-padding.png";
+    }
+
     sessionStorage.setItem("visited", false)
     console.log(sessionStorage.getItem("visited"))
     const element = document.getElementById("loaderimage");

@@ -67,7 +67,7 @@ body
     height: 64px;
     border-radius: 50%;
     border: 2px solid #fff;
-    border-color: #fff transparent #fff transparent;
+    border-color: #ffffff transparent #fff transparent;
     animation: loader-rotation 1.2s linear infinite;
 }
 
@@ -79,6 +79,7 @@ body
   }
   100% {
     transform: rotate(360deg);
+    transform: rotateY('20');
   }
 }
 

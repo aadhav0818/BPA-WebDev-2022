@@ -1,5 +1,5 @@
 
-if(sessionStorage.getItem("visited" != null))
+if(sessionStorage.getItem("visited" !== null))
 {
 
     if(sessionStorage.getItem("visited" == false))
@@ -9,6 +9,7 @@ if(sessionStorage.getItem("visited" != null))
     }
     else
     {
+        console.log("HI");
         const element = document.getElementById("loaderimage");
         element.classList.remove('loader-logo')
 

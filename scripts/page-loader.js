@@ -1,5 +1,5 @@
 
-if(sessionStorage.getItem("visited" !== null))
+if(sessionStorage.getItem("visited") != null)
 {
 
     if(sessionStorage.getItem("visited" == false))

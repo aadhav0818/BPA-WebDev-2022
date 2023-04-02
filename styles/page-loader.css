@@ -38,6 +38,6 @@ body
       width: 0;
     }
     100% {
-      width: 90%;
+      width: 60vh;
     }
   }

@@ -10,9 +10,6 @@ if(sessionStorage.getItem("visited") != null)
     else
     {
         console.log("HI");
-        const element = document.getElementById("loaderimage");
-        element.classList.remove('loader-logo')
-
     }
 }
 else
@@ -28,6 +25,9 @@ else
           transitionJS();
         }
     };
+
+    element.remove();
+
     sessionStorage.setItem("visited", true)
 
 }

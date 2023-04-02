@@ -53,7 +53,8 @@ body
 
 .rotatercapsule
 {
-  clear: both;
+    position: absolute;
+    clear: both;
     display: block;
 }
 

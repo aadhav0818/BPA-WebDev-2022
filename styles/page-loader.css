@@ -11,10 +11,18 @@ body
 .loader-logo
 {
     animation: rightToLeft 2s ease;
-    height: 20%;
+    height: 4vh;
     object-fit: cover;
     object-position: 100% 0;
     filter: brightness(90%);
+}
+
+@media (max-width: 450px)
+{
+  .loader-logo
+  {
+    height: 2vh;
+  }
 }
 
 .fadeouthome

@@ -1,3 +1,10 @@
+if(sessionStorage.getItem("visited") != null)
+{
+    const element = document.getElementById("loaderimage");
+    element.remove();
+}
+
+
 
 if(sessionStorage.getItem("visited") != null)
 {
@@ -7,10 +14,7 @@ if(sessionStorage.getItem("visited") != null)
         let element = document.getElementById("loaderimage");
         element.classList.add("loader-logo")
     }
-    else
-    {
-        
-    }
+   
 }
 else
 {
@@ -26,13 +30,7 @@ else
         }
     };
 
-    console.log("HI")
-
-    setTimeout(() => {
-        const ploader = document.getElementById("page-loader-body");
-        ploader.remove();
-        console.log("HI")
-    }, "2000");
+    sessionStorage.setItem("deleteLoader", true)
 
 
     sessionStorage.setItem("visited", true)

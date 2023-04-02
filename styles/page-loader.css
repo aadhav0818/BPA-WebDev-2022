@@ -53,6 +53,7 @@ body
 
 .rotator
 {
+    position: relative;
     content: "";
     width: 64px;
     height: 64px;

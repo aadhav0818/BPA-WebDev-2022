@@ -22,7 +22,8 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <script src="./scripts/chat.js"></script>
     <link rel="Shortcut Icon" type="image/png" href="image-assets/favicon.png">
-
+    <link rel="stylesheet" href="./styles/scroll-animation-general.css">
+    <script defer src="./scripts/scroll-animation.js"></script>
 </head>
 
 <body>
@@ -110,7 +111,7 @@
             <div class="section_subtitle">Mission Statement</div>
           </div>
           <div class="about-item"><br>
-              <div class="history_script" >
+              <div class="history_script hidden" >
                 Our mission at Vternal Motors is to provide our customers with a wide selection of high-quality, affordably-priced used vehicles, along with exceptional customer service and support. We are committed to offering a stress-free and transparent car-buying experience, and strive to earn the trust and loyalty of our customers through honesty, integrity, and fair pricing. Our ultimate goal is to help every customer find the perfect vehicle that meets their needs and budget, and to create long-lasting relationships built on trust and satisfaction. 
               </div>
             <div class="htgt-20"></div>
@@ -121,7 +122,7 @@
           </div>
         </div>
         <div class="mission-statement-img col-sm-12 col-lg-6">
-            <img src="image-assets/mission-statement.png" alt="hello">
+            <img src="image-assets/mission-statement.png" alt="hello" class = "hidden">
         </div>
       </div>
     </div>
@@ -132,7 +133,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="section_title"><br><br><br>
-              <div class="section_subtitle">Values</div><br><br>
+              <div class="section_subtitle hidden">Values</div><br><br>
             </div>
           </div>
           
@@ -145,8 +146,8 @@
             <div class="values-item">
               <ion-icon name="checkmark-circle-outline"></ion-icon>
                 <div class="values-single-item">
-                  <h5 class="services-heading">Integrity</h5>
-                  <p>
+                  <h5 class="services-heading hidden">Integrity</h5>
+                  <p class = "hidden">
                     At Vternal, we establish integrity by following best practices in the industry such as thoroughly inspecting and reconditioning the vehicles we sell, while offering transparent pricing with no hidden fees. Additionally, we also ensure honesty in advertising by accurately representing the condition of the vehicles we sell and disclosing any known issues. Through these practices, our goal is to build trust with our customers and allow them to feel confident that they made the right choice. By consistently following these principles, we believe we maintain a strong standard of integrity in our business.
                   </p>
                 </div>
@@ -158,8 +159,8 @@
             <div class="values-item">
               <ion-icon name="people-outline"></ion-icon>
                 <div class="values-single-item">
-                  <h5 class="services-heading">Customer-Focused</h5>
-                  <p>
+                  <h5 class="services-heading hidden">Customer-Focused</h5>
+                  <p class = "hidden">
                     At Vternal, we place a strong emphasis on maintaining excellent customer service. To achieve this, we have implemented several strategies to ensure that their customers are satisfied with the services they receive. Some of ther services include our trained support staff to be knowledgeable and helpful, so they can answer any questions that customers might have and provide them with the information they need through our chat or contact us feature. As a company, we have a customer-centric approach to our business operations, meaning that we always put the needs of our customers first.
                   </p>
                 </div>
@@ -171,8 +172,8 @@
           <div class="values-item">
             <ion-icon name="cash-outline"></ion-icon>
               <div class="values-single-item">
-                <h5 class="services-heading">Affordability</h5>
-                <p>
+                <h5 class="services-heading hidden">Affordability</h5>
+                <p class = "hidden">
                   At Vternal we emphasize the importance of preserving the affordability of our cars for customers. We have established relationships with various automotive suppliers, which allows us to purchase high-quality vehicles at bulk prices. We then pass on these savings to our customers by pricing our cars competitively. Vternal also offers flexible financing options, trade-in evaluations, and extended warranties, which help customers manage the cost of purchasing a used car. By combining these efforts, our dealership is able to provide customers with a wide range of used vehicles, while maintaining its commitment to affordability.
                 </p>
               </div>
@@ -183,8 +184,8 @@
         <div class="values-item"><br>
           <ion-icon name="happy-outline"></ion-icon>
             <div class="values-single-item">
-              <h5 class="services-heading">Convenience</h5>
-              <p>
+              <h5 class="services-heading hidden">Convenience</h5>
+              <p class = "hidden">
                 At Vternal, we put a priority on keeping convenience for its customers. To achieve this, we have implemented several strategies to ensure that our customers can easily find and purchase the vehicles they need. Through our website we allow our customers to browse our inventory, compare different models, and complete most of the buying process online. Our dealership also has a network of service centers located throughout our Dallas service area, making it easy for our customers to get their vehicles service. By providing this, we are able to ensure that our customers have a positive car-buying experience.
 
               </p>
@@ -198,8 +199,8 @@
       <div class="values-item"><br>
         <ion-icon name="ribbon-outline"></ion-icon>
           <div class="values-single-item">
-            <h5 class="services-heading">Quality</h5>
-            <p>
+            <h5 class="services-heading hidden">Quality</h5>
+            <p class = "hidden">
               At Vternal, we place importance on the quality of our vehicles for our customers. Our dealership has a rigorous inspection process for each vehicle we acquire, which helps to ensure that they are buying only the best used cars. We also refurbish each vehicle before offering it for sale, so that customers can be confident that they are getting a well-maintained car. Vternal also only deals with reputable suppliers, which helps to ensure that the vehicles they offer are the best. By focusing on quality, Vternal is able to ensure that our customers receive vehicles that meet their needs and expectations.
             </p>
           </div>
@@ -210,8 +211,8 @@
     <div class="values-item"><br>
       <ion-icon name="calendar-number-outline"></ion-icon>
         <div class="values-single-item">
-          <h5 class="services-heading">Reliability</h5>
-          <p>
+          <h5 class="services-heading hidden">Reliability</h5>
+          <p class = "hidden">
             Vternal puts a focus on making sure that they are reliable for its customers. In order to do this, we ensured that our customers receive vehicles that are dependable. Our dealership has a rigorous inspection process for each vehicle we acquire, which helps to identify any potential problems before the vehicle is offered for sale. To further demonstrate their commitment to reliability, Vternal provides detailed vehicle history reports and offers comprehensive maintenance. By focusing on reliability, our dealership is able to ensure that our customers receive vehicles that they can depend on for many miles to come.
           </p>
     </div>
@@ -226,16 +227,16 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="section_title"><br><br><br>
-              <div class="section_subtitle">Service Representatives</div><br><br>
-              <h4>Meet our team!</h4>
+              <div class="hidden section_subtitle">Service Representatives</div><br><br>
+              <h4 class = "hidden">Meet our team!</h4>
             </div>
-            <div class ="service-reps">
+            <div class ="hidden service-reps">
               <p>Vternal’s service representatives are responsible for providing support to their customers throughout their experience with the company. Customer service representatives also help customers find the right car to meet their needs by providing guidance. Their main goal is to provide prompt and effective support, and help ensure that customers have a positive and stress-free car buying experience. In the end, they hope to provide an accurate representation of our company's vision and provide you the best experience.</p>
             </div>
           </div>
         
 
-        <div class="col-sm-6">
+        <div class="hidden col-sm-6">
           <div id="skills">
             <div class="skillbar" data-percent="100%">
               <div class="skillbar-title">Product Knowledge

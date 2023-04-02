@@ -26,7 +26,8 @@ else
         }
     };
 
-    element.remove();
+    const ploader = document.getElementById("page-loader-body");
+    ploader.remove();
 
     sessionStorage.setItem("visited", true)
 

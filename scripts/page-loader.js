@@ -7,7 +7,12 @@ if(sessionStorage.getItem("visited" != null))
         let element = document.getElementById("loaderimage");
         element.classList.add("loader-logo")
     }
-    
+    else
+    {
+        const element = document.getElementById("loaderimage");
+        element.classList.remove('loader-logo')
+
+    }
 }
 else
 {

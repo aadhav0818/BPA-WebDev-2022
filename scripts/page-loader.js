@@ -29,6 +29,7 @@ else
     setTimeout(() => {
         const ploader = document.getElementById("page-loader-body");
         ploader.remove();
+        console.log("HI")
     }, "2000");
 
 

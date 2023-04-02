@@ -9,7 +9,7 @@ if(sessionStorage.getItem("visited") != null)
     }
     else
     {
-        console.log("HI");
+        
     }
 }
 else
@@ -26,8 +26,11 @@ else
         }
     };
 
-    const ploader = document.getElementById("page-loader-body");
-    ploader.remove();
+    setTimeout(() => {
+        const ploader = document.getElementById("page-loader-body");
+        ploader.remove();
+    }, "2000");
+
 
     sessionStorage.setItem("visited", true)
 

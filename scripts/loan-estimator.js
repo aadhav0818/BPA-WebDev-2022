@@ -75,6 +75,5 @@ function formatPrice(value) {
     } else {
         return sepVals[0] + ".00";
     }
-    return value;
 }
 

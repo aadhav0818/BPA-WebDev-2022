@@ -1484,7 +1484,7 @@ function showCards()
             <div class="modal-body text-white">
                 <div class="container">
                     <div class="row">
-                        <div class="contact-us-form hidden">
+                        <div class="contact-us-form">
                         <div class="row contact-box">
                         <div class="contact-left">
                             <h3>We'll contact you when this vehicle arrives</h3>
@@ -1829,7 +1829,7 @@ function filteredFill()
                         <div class="modal-body text-white">
                             <div class="container">
                                 <div class="row">
-                                    <div class="contact-us-form hidden">
+                                    <div class="contact-us-form">
                                     <div class="row contact-box">
                                     <div class="contact-left">
                                         <h3>Schedule an Appointment</h3>

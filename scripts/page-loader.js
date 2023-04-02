@@ -1,13 +1,11 @@
 if(sessionStorage.getItem("deleteLoader") != null)
 {
     console.log("NUL")
-    const element = document.getElementById("fullloader");
+    const element = document.getElementById("page-loader-body");
 
     element.remove(); 
     const main_page = document.getElementById("homepage");
     main_page.style.display = "Inline";
-    main_page.style.backgroundColor = "#353333";
-
 }
 
 

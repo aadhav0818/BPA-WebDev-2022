@@ -25,6 +25,11 @@ else
         let image = document.getElementById("loaderimage")
         image.src = "../image-assets/logo-no-padding.png";
     }
+    else
+    {
+        let image = document.getElementById("loaderimage")
+        image.src = "../image-assets/logo-no-padding.png";
+    }
 
     sessionStorage.setItem("visited", false)
     console.log(sessionStorage.getItem("visited"))

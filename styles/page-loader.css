@@ -59,11 +59,10 @@ body
 
 .rotator:after
 {
-    content: " ";
+    content: "LOADING";
     display: block;
     width: 64px;
     height: 64px;
-    margin: 8px;
     border-radius: 50%;
     border: 6px solid #fff;
     border-color: #fff transparent #fff transparent;

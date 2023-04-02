@@ -2,10 +2,10 @@ if(sessionStorage.getItem("deleteLoader") != null)
 {
     console.log("NUL")
     const element = document.getElementById("page-loader-body");
-    const element2 = document.getElementById("rotatercapsule");
+    // const element2 = document.getElementById("rotatercapsule");
 
     element.remove(); 
-    element2.remove();
+    // element2.remove();
     const main_page = document.getElementById("homepage");
     main_page.style.display = "Inline";
 }

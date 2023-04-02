@@ -51,6 +51,11 @@ body
     }
   }
 
+.rotatercapsule
+{
+    display: block;
+}
+
 .rotator
 {
     margin-top: 10px;

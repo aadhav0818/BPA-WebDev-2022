@@ -26,7 +26,7 @@ else
         }
     };
 
-    element.remove();
+    element.classList.remove("loaderimage");
 
     sessionStorage.setItem("visited", true)
 

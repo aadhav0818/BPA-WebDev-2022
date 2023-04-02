@@ -26,7 +26,7 @@ else
         }
     };
 
-    element.remove;
+    element.remove();
 
     sessionStorage.setItem("visited", true)
 

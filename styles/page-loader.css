@@ -53,7 +53,7 @@ body
 
 .rotator
 {
-    display: block;
+    padding-left: 20%;
     margin-top: 10px;
     content: "";
     width: 64px;
